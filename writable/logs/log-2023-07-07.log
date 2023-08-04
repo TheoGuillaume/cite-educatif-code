@@ -1,0 +1,109 @@
+CRITICAL - 2023-07-07 07:48:17 --> Too few arguments to function App\Controllers\Inscription::showPassword(), 0 passed in /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH/Controllers/Inscription.php on line 64.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->showPassword()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-07 07:49:32 --> Too few arguments to function App\Controllers\Inscription::showPassword(), 0 passed in /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH/Controllers/Inscription.php on line 64.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->showPassword()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-07 08:47:19 --> Undefined variable $userModel
+in APPPATH/Controllers/SendEmailController.php on line 36.
+ 1 APPPATH/Controllers/SendEmailController.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userModel', 'APPPATH/Controllers/SendEmailController.php', 36)
+ 2 APPPATH/Controllers/SendEmailController.php(60): App\Controllers\SendEmailController->sendEmail('guillaume.haisoa@gmail.com')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\SendEmailController->sendEmailVerify()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SendEmailController))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-07 08:50:25 --> Too few arguments to function App\Controllers\Inscription::showPassword(), 0 passed in /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH/Controllers/Inscription.php on line 81.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->showPassword()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-07 08:50:38 --> Too few arguments to function App\Controllers\Inscription::showPassword(), 0 passed in /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH/Controllers/Inscription.php on line 81.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->showPassword()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-07 08:51:24 --> Too few arguments to function App\Controllers\Inscription::showPassword(), 0 passed in /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH/Controllers/Inscription.php on line 81.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->showPassword()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-07 08:51:44 --> Too few arguments to function App\Controllers\Inscription::showPassword(), 0 passed in /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH/Controllers/Inscription.php on line 81.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->showPassword()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-07 08:52:59 --> Too few arguments to function App\Controllers\Inscription::showPassword(), 0 passed in /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH/Controllers/Inscription.php on line 81.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->showPassword()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-07 09:10:02 --> Class "App\Controllers\DateTime" not found
+in APPPATH/Controllers/Inscription.php on line 72.
+ 1 APPPATH/Controllers/Inscription.php(94): App\Controllers\Inscription->verificationToken('ef25f98fc21969b22f24631270f739424e15b4e0')
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->showPassword('ef25f98fc21969b22f24631270f739424e15b4e0')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-07 09:18:19 --> Class "App\Controllers\DateTime" not found
+in APPPATH/Controllers/Inscription.php on line 72.
+ 1 APPPATH/Controllers/Inscription.php(94): App\Controllers\Inscription->verificationToken('ef25f98fc21969b22f24631270f739424e15b4e0')
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->showPassword('ef25f98fc21969b22f24631270f739424e15b4e0')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-07 09:19:54 --> Undefined array key "token_exipre"
+in APPPATH/Controllers/Inscription.php on line 73.
+ 1 APPPATH/Controllers/Inscription.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "token_exipre"', 'APPPATH/Controllers/Inscription.php', 73)
+ 2 APPPATH/Controllers/Inscription.php(89): App\Controllers\Inscription->verificationToken('ef25f98fc21969b22f24631270f739424e15b4e0')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->showPassword('ef25f98fc21969b22f24631270f739424e15b4e0')
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-07 09:20:14 --> Undefined array key 0
+in APPPATH/Controllers/Inscription.php on line 73.
+ 1 APPPATH/Controllers/Inscription.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Controllers/Inscription.php', 73)
+ 2 APPPATH/Controllers/Inscription.php(89): App\Controllers\Inscription->verificationToken('ef25f98fc21969b22f24631270f739424e15b4e0')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->showPassword('ef25f98fc21969b22f24631270f739424e15b4e0')
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-07 09:31:53 --> Undefined constant "App\Controllers\now"
+in APPPATH/Controllers/Inscription.php on line 72.
+ 1 APPPATH/Controllers/Inscription.php(90): App\Controllers\Inscription->verificationToken('ef25f98fc21969b22f24631270f739424e15b4e0')
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->showPassword('ef25f98fc21969b22f24631270f739424e15b4e0')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-07 10:20:57 --> Undefined variable $file
+in APPPATH/Views/profil/profil_structure.php on line 254.
+ 1 APPPATH/Views/profil/profil_structure.php(254): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $file', 'APPPATH/Views/profil/profil_structure.php', 254)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profil/profil_structure.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('profil/profil_structure', [], true)
+ 5 APPPATH/Controllers/Profil.php(107): view('profil/profil_structure', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Profil->profil()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-07 10:33:22 --> Undefined variable $file
+in APPPATH/Views/profil/profil_structure.php on line 254.
+ 1 APPPATH/Views/profil/profil_structure.php(254): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $file', 'APPPATH/Views/profil/profil_structure.php', 254)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profil/profil_structure.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('profil/profil_structure', [], true)
+ 5 APPPATH/Controllers/Profil.php(107): view('profil/profil_structure', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Profil->profil()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

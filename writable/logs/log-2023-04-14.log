@@ -1,0 +1,24 @@
+CRITICAL - 2023-04-14 12:11:53 --> Class 'App\Controllers\cs_struct' not found
+in APPPATH/Controllers/Home.php on line 30.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->login()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-14 13:07:34 --> Invalid file: "static/faq/header.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('static/faq/header.php')
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('static/faq/header', [], true)
+ 3 APPPATH/Controllers/Faq.php(7): view('static/faq/header')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Faq->faq()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Faq))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-14 13:10:50 --> Invalid file: "static/faq/header.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('static/faq/header.php')
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('static/faq/header', [], true)
+ 3 APPPATH/Controllers/Faq.php(7): view('static/faq/header')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Faq->faq()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Faq))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

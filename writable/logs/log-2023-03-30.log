@@ -1,0 +1,9 @@
+CRITICAL - 2023-03-30 07:00:50 --> Invalid file: "inscription/structure/inscription_structure_creer_compte.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('inscription/structure/inscription_structure_creer_compte.php')
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('inscription/structure/inscription_structure_creer_compte', [], true)
+ 3 APPPATH/Controllers/Inscription.php(11): view('inscription/structure/inscription_structure_creer_compte')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->inscriptionStructureCreerCompte()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

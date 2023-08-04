@@ -1,0 +1,421 @@
+CRITICAL - 2023-07-31 13:09:53 --> Undefined variable $file
+in APPPATH/Views/landingPage/landing_page_detail.php on line 195.
+ 1 APPPATH/Views/landingPage/landing_page_detail.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $file', 'APPPATH/Views/landingPage/landing_page_detail.php', 195)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/landingPage/landing_page_detail.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('landingPage/landing_page_detail', [], true)
+ 5 APPPATH/Controllers/LandingPage.php(169): view('landingPage/landing_page_detail', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageDetail('141')
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 13:09:56 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/LandingPage.php on line 134.
+ 1 APPPATH/Controllers/LandingPage.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/LandingPage.php', 134)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageDetail('FCPATH/assets', 'fontawesome', 'css', 'all.min.css')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 13:09:59 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/LandingPage.php on line 134.
+ 1 APPPATH/Controllers/LandingPage.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/LandingPage.php', 134)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageDetail('FCPATH/assets', 'fontawesome', 'css', 'fontawesome.css')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 13:12:32 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/LandingPage.php on line 134.
+ 1 APPPATH/Controllers/LandingPage.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/LandingPage.php', 134)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageDetail('FCPATH/assets', 'fontawesome', 'css', 'all.min.css')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 13:12:36 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/LandingPage.php on line 134.
+ 1 APPPATH/Controllers/LandingPage.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/LandingPage.php', 134)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageDetail('FCPATH/assets', 'fontawesome', 'css', 'fontawesome.css')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 13:14:49 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/LandingPage.php on line 134.
+ 1 APPPATH/Controllers/LandingPage.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/LandingPage.php', 134)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageDetail('FCPATH/assets', 'fontawesome', 'css', 'all.min.css')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 13:14:52 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/LandingPage.php on line 134.
+ 1 APPPATH/Controllers/LandingPage.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/LandingPage.php', 134)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageDetail('FCPATH/assets', 'fontawesome', 'css', 'fontawesome.css')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 13:16:16 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/LandingPage.php on line 134.
+ 1 APPPATH/Controllers/LandingPage.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/LandingPage.php', 134)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageDetail('FCPATH/assets', 'fontawesome', 'css', 'all.min.css')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 13:16:19 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/LandingPage.php on line 134.
+ 1 APPPATH/Controllers/LandingPage.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/LandingPage.php', 134)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageDetail('FCPATH/assets', 'fontawesome', 'css', 'fontawesome.css')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 13:17:11 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/LandingPage.php on line 134.
+ 1 APPPATH/Controllers/LandingPage.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/LandingPage.php', 134)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageDetail('FCPATH/assets', 'fontawesome', 'css', 'all.min.css')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 13:17:14 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/LandingPage.php on line 134.
+ 1 APPPATH/Controllers/LandingPage.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/LandingPage.php', 134)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageDetail('FCPATH/assets', 'fontawesome', 'css', 'fontawesome.css')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 13:18:30 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/LandingPage.php on line 134.
+ 1 APPPATH/Controllers/LandingPage.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/LandingPage.php', 134)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageDetail('FCPATH/assets', 'fontawesome', 'css', 'fontawesome.css')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 13:18:32 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/LandingPage.php on line 134.
+ 1 APPPATH/Controllers/LandingPage.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/LandingPage.php', 134)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageDetail('FCPATH/assets', 'fontawesome', 'css', 'all.min.css')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 13:19:09 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/LandingPage.php on line 134.
+ 1 APPPATH/Controllers/LandingPage.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/LandingPage.php', 134)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageDetail('FCPATH/assets', 'fontawesome', 'css', 'fontawesome.css')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 13:19:12 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/LandingPage.php on line 134.
+ 1 APPPATH/Controllers/LandingPage.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/LandingPage.php', 134)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageDetail('FCPATH/assets', 'fontawesome', 'css', 'all.min.css')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 13:19:50 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/LandingPage.php on line 134.
+ 1 APPPATH/Controllers/LandingPage.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/LandingPage.php', 134)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageDetail('FCPATH/assets', 'fontawesome', 'css', 'all.min.css')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 13:19:52 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/LandingPage.php on line 134.
+ 1 APPPATH/Controllers/LandingPage.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/LandingPage.php', 134)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageDetail('FCPATH/assets', 'fontawesome', 'css', 'fontawesome.css')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 13:20:55 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/LandingPage.php on line 134.
+ 1 APPPATH/Controllers/LandingPage.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/LandingPage.php', 134)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageDetail('FCPATH/assets', 'fontawesome', 'css', 'fontawesome.css')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 13:21:01 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/LandingPage.php on line 134.
+ 1 APPPATH/Controllers/LandingPage.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/LandingPage.php', 134)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageDetail('FCPATH/assets', 'fontawesome', 'css', 'all.min.css')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 13:21:48 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/LandingPage.php on line 134.
+ 1 APPPATH/Controllers/LandingPage.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/LandingPage.php', 134)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageDetail('FCPATH/assets', 'fontawesome', 'css', 'fontawesome.css')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 13:21:50 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/LandingPage.php on line 134.
+ 1 APPPATH/Controllers/LandingPage.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/LandingPage.php', 134)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageDetail('FCPATH/assets', 'fontawesome', 'css', 'all.min.css')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 13:22:25 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/LandingPage.php on line 134.
+ 1 APPPATH/Controllers/LandingPage.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/LandingPage.php', 134)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageDetail('FCPATH/assets', 'fontawesome', 'css', 'fontawesome.css')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 13:22:28 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/LandingPage.php on line 134.
+ 1 APPPATH/Controllers/LandingPage.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/LandingPage.php', 134)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageDetail('FCPATH/assets', 'fontawesome', 'css', 'all.min.css')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 13:23:31 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/LandingPage.php on line 134.
+ 1 APPPATH/Controllers/LandingPage.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/LandingPage.php', 134)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageDetail('FCPATH/assets', 'fontawesome', 'css', 'fontawesome.css')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-31 13:23:54 --> Error connecting to the database: mysqli_sql_exception: MySQL server has gone away in /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php:174
+Stack trace:
+#0 /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php(174): mysqli->real_connect('195.179.238.1', 'u218692649_t_ce...', 'T_ce_0728_1139', 'u218692649_t_ce...', 3306, '', 0)
+#1 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /opt/lampp/htdocs/cite-educative/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /opt/lampp/htdocs/cite-educative/system/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/cite-educative/system/BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 /opt/lampp/htdocs/cite-educative/app/Controllers/LandingPage.php(34): CodeIgniter\BaseModel->first()
+#7 /opt/lampp/htdocs/cite-educative/app/Controllers/LandingPage.php(128): App\Controllers\LandingPage->fecthNbNotification(141, 2)
+#8 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageDetail('assets', 'fontawesome', 'css', 'all.min.css')
+#9 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+#10 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /opt/lampp/htdocs/cite-educative/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away in /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /opt/lampp/htdocs/cite-educative/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 /opt/lampp/htdocs/cite-educative/system/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#4 /opt/lampp/htdocs/cite-educative/system/BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 /opt/lampp/htdocs/cite-educative/app/Controllers/LandingPage.php(34): CodeIgniter\BaseModel->first()
+#6 /opt/lampp/htdocs/cite-educative/app/Controllers/LandingPage.php(128): App\Controllers\LandingPage->fecthNbNotification(141, 2)
+#7 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageDetail('assets', 'fontawesome', 'css', 'all.min.css')
+#8 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+#9 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /opt/lampp/htdocs/cite-educative/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-31 13:23:54 --> Unable to connect to the database.
+Main connection [MySQLi]: MySQL server has gone away
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `isa`
+FROM `c_notification`
+WHERE `id_recepteur` = :id_recepteur:
+AND `lu` = :lu:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/LandingPage.php(34): CodeIgniter\BaseModel->first()
+ 6 APPPATH/Controllers/LandingPage.php(128): App\Controllers\LandingPage->fecthNbNotification(141, 2)
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageDetail('FCPATH/assets', 'fontawesome', 'css', 'all.min.css')
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 13:24:29 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/LandingPage.php on line 134.
+ 1 APPPATH/Controllers/LandingPage.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/LandingPage.php', 134)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageDetail('FCPATH/assets', 'fontawesome', 'css', 'all.min.css')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 13:24:32 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/LandingPage.php on line 134.
+ 1 APPPATH/Controllers/LandingPage.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/LandingPage.php', 134)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageDetail('FCPATH/assets', 'fontawesome', 'css', 'fontawesome.css')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 13:25:30 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/LandingPage.php on line 134.
+ 1 APPPATH/Controllers/LandingPage.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/LandingPage.php', 134)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageDetail('FCPATH/assets', 'fontawesome', 'css', 'fontawesome.css')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 13:25:40 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/LandingPage.php on line 134.
+ 1 APPPATH/Controllers/LandingPage.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/LandingPage.php', 134)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageDetail('FCPATH/assets', 'fontawesome', 'css', 'all.min.css')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-31 13:26:44 --> Error connecting to the database: mysqli_sql_exception: MySQL server has gone away in /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php:174
+Stack trace:
+#0 /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php(174): mysqli->real_connect('195.179.238.1', 'u218692649_t_ce...', 'T_ce_0728_1139', 'u218692649_t_ce...', 3306, '', 0)
+#1 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /opt/lampp/htdocs/cite-educative/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /opt/lampp/htdocs/cite-educative/system/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/cite-educative/system/BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 /opt/lampp/htdocs/cite-educative/app/Controllers/LandingPage.php(34): CodeIgniter\BaseModel->first()
+#7 /opt/lampp/htdocs/cite-educative/app/Controllers/LandingPage.php(128): App\Controllers\LandingPage->fecthNbNotification(141, 2)
+#8 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageDetail('assets', 'fontawesome', 'css', 'fontawesome.css')
+#9 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+#10 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /opt/lampp/htdocs/cite-educative/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away in /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /opt/lampp/htdocs/cite-educative/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 /opt/lampp/htdocs/cite-educative/system/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#4 /opt/lampp/htdocs/cite-educative/system/BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 /opt/lampp/htdocs/cite-educative/app/Controllers/LandingPage.php(34): CodeIgniter\BaseModel->first()
+#6 /opt/lampp/htdocs/cite-educative/app/Controllers/LandingPage.php(128): App\Controllers\LandingPage->fecthNbNotification(141, 2)
+#7 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageDetail('assets', 'fontawesome', 'css', 'fontawesome.css')
+#8 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+#9 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /opt/lampp/htdocs/cite-educative/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-31 13:26:44 --> Unable to connect to the database.
+Main connection [MySQLi]: MySQL server has gone away
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `isa`
+FROM `c_notification`
+WHERE `id_recepteur` = :id_recepteur:
+AND `lu` = :lu:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/LandingPage.php(34): CodeIgniter\BaseModel->first()
+ 6 APPPATH/Controllers/LandingPage.php(128): App\Controllers\LandingPage->fecthNbNotification(141, 2)
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageDetail('FCPATH/assets', 'fontawesome', 'css', 'fontawesome.css')
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 13:26:47 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/LandingPage.php on line 134.
+ 1 APPPATH/Controllers/LandingPage.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/LandingPage.php', 134)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageDetail('FCPATH/assets', 'fontawesome', 'css', 'all.min.css')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 13:27:31 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/LandingPage.php on line 134.
+ 1 APPPATH/Controllers/LandingPage.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/LandingPage.php', 134)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageDetail('FCPATH/assets', 'fontawesome', 'css', 'fontawesome.css')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 13:27:35 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/LandingPage.php on line 134.
+ 1 APPPATH/Controllers/LandingPage.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/LandingPage.php', 134)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageDetail('FCPATH/assets', 'fontawesome', 'css', 'all.min.css')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 13:28:41 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/LandingPage.php on line 134.
+ 1 APPPATH/Controllers/LandingPage.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/LandingPage.php', 134)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageDetail('FCPATH/assets', 'fontawesome', 'css', 'fontawesome.css')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 13:28:41 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/LandingPage.php on line 134.
+ 1 APPPATH/Controllers/LandingPage.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/LandingPage.php', 134)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageDetail('FCPATH/assets', 'fontawesome', 'css', 'all.min.css')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 13:29:41 --> Undefined variable $file
+in APPPATH/Views/landingPage/landing_page_detail.php on line 192.
+ 1 APPPATH/Views/landingPage/landing_page_detail.php(192): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $file', 'APPPATH/Views/landingPage/landing_page_detail.php', 192)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/landingPage/landing_page_detail.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('landingPage/landing_page_detail', [], true)
+ 5 APPPATH/Controllers/LandingPage.php(169): view('landingPage/landing_page_detail', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageDetail('141')
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 13:29:44 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/LandingPage.php on line 134.
+ 1 APPPATH/Controllers/LandingPage.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/LandingPage.php', 134)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageDetail('FCPATH/assets', 'fontawesome', 'css', 'all.min.css')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 13:29:46 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/LandingPage.php on line 134.
+ 1 APPPATH/Controllers/LandingPage.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/LandingPage.php', 134)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageDetail('FCPATH/assets', 'fontawesome', 'css', 'fontawesome.css')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 13:30:35 --> Undefined variable $file
+in APPPATH/Views/landingPage/landing_page_detail.php on line 192.
+ 1 APPPATH/Views/landingPage/landing_page_detail.php(192): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $file', 'APPPATH/Views/landingPage/landing_page_detail.php', 192)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/landingPage/landing_page_detail.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('landingPage/landing_page_detail', [], true)
+ 5 APPPATH/Controllers/LandingPage.php(169): view('landingPage/landing_page_detail', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageDetail('141')
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 13:30:39 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/LandingPage.php on line 134.
+ 1 APPPATH/Controllers/LandingPage.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/LandingPage.php', 134)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageDetail('FCPATH/assets', 'fontawesome', 'css', 'fontawesome.css')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 13:30:41 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/LandingPage.php on line 134.
+ 1 APPPATH/Controllers/LandingPage.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/LandingPage.php', 134)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageDetail('FCPATH/assets', 'fontawesome', 'css', 'all.min.css')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 13:31:07 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/LandingPage.php on line 134.
+ 1 APPPATH/Controllers/LandingPage.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/LandingPage.php', 134)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageDetail('FCPATH/assets', 'fontawesome', 'css', 'fontawesome.css')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 13:31:10 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/LandingPage.php on line 134.
+ 1 APPPATH/Controllers/LandingPage.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/LandingPage.php', 134)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageDetail('FCPATH/assets', 'fontawesome', 'css', 'all.min.css')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 13:36:42 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/LandingPage.php on line 134.
+ 1 APPPATH/Controllers/LandingPage.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/LandingPage.php', 134)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageDetail('FCPATH/assets', 'fontawesome', 'css', 'all.min.css')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 13:36:44 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/LandingPage.php on line 134.
+ 1 APPPATH/Controllers/LandingPage.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/LandingPage.php', 134)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageDetail('FCPATH/assets', 'fontawesome', 'css', 'fontawesome.css')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 13:37:01 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/LandingPage.php on line 134.
+ 1 APPPATH/Controllers/LandingPage.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/LandingPage.php', 134)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageDetail('FCPATH/assets', 'fontawesome', 'css', 'fontawesome.css')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 13:37:04 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/LandingPage.php on line 134.
+ 1 APPPATH/Controllers/LandingPage.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/LandingPage.php', 134)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageDetail('FCPATH/assets', 'fontawesome', 'css', 'all.min.css')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

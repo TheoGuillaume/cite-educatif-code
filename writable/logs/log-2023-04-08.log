@@ -1,0 +1,71 @@
+CRITICAL - 2023-04-08 08:38:54 --> Session: Configured save path "/opt/lampp/htdocs/cite-educative_dev/writable/session" is not writable by the PHP process.
+in SYSTEMPATH/Session/Handlers/FileHandler.php on line 101.
+ 1 SYSTEMPATH/Session/Handlers/FileHandler.php(101): CodeIgniter\Session\Exceptions\SessionException::forWriteProtectedSavePath('ROOTPATH/writable/session')
+ 2 [internal function]: CodeIgniter\Session\Handlers\FileHandler->open('ROOTPATH/writable/session', 'ci_session')
+ 3 SYSTEMPATH/Session/Session.php(928): session_start()
+ 4 SYSTEMPATH/Session/Session.php(250): CodeIgniter\Session\Session->startSession()
+ 5 SYSTEMPATH/Config/Services.php(674): CodeIgniter\Session\Session->start()
+ 6 SYSTEMPATH/Config/BaseService.php(252): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 7 SYSTEMPATH/Config/BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 8 SYSTEMPATH/Config/Services.php(641): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 9 SYSTEMPATH/Config/BaseService.php(252): CodeIgniter\Config\Services::session()
+10 APPPATH/Controllers/BaseController.php(57): CodeIgniter\Config\BaseService::__callStatic('session', [])
+11 SYSTEMPATH/CodeIgniter.php(907): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+12 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+13 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-08 08:44:23 --> Class 'App\Models\cs_horaire' not found
+in APPPATH/Controllers/Inscription.php on line 127.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->inscriptionStructureZero()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-08 10:19:31 --> Invalid argument supplied for foreach()
+in APPPATH/Views/inscription/structure/inscription_structure_0.php on line 92.
+ 1 APPPATH/Views/inscription/structure/inscription_structure_0.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH/Views/inscription/structure/inscription_structure_0.php', 92, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/inscription/structure/inscription_structure_0.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('inscription/structure/inscription_structure_0', [], true)
+ 5 APPPATH/Controllers/Inscription.php(130): view('inscription/structure/inscription_structure_0')
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->inscriptionStructureZero()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-08 11:10:34 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`cityeduc`.`c_utilisateur`, CONSTRAINT `c_utilisateur_ibfk_1` FOREIGN KEY (`id_utilisateur_categorie`) REFERENCES `c_utilisateur_categorie` (`id`)) in /opt/lampp/htdocs/cite-educative_dev/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/cite-educative_dev/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `c_...', 0)
+#1 /opt/lampp/htdocs/cite-educative_dev/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `c_...')
+#2 /opt/lampp/htdocs/cite-educative_dev/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `c_...')
+#3 /opt/lampp/htdocs/cite-educative_dev/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `c_...', Array, false)
+#4 /opt/lampp/htdocs/cite-educative_dev/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 /opt/lampp/htdocs/cite-educative_dev/system/BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 /opt/lampp/htdocs/cite-educative_dev/system/Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 /opt/lampp/htdocs/cite-educative_dev/app/Controllers/Inscription.php(62): CodeIgniter\Model->insert(Array)
+#8 /opt/lampp/htdocs/cite-educative_dev/system/CodeIgniter.php(934): App\Controllers\Inscription->saveUtilisateur()
+#9 /opt/lampp/htdocs/cite-educative_dev/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+#10 /opt/lampp/htdocs/cite-educative_dev/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /opt/lampp/htdocs/cite-educative_dev/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-04-08 11:10:34 --> Cannot add or update a child row: a foreign key constraint fails (`cityeduc`.`c_utilisateur`, CONSTRAINT `c_utilisateur_ibfk_1` FOREIGN KEY (`id_utilisateur_categorie`) REFERENCES `c_utilisateur_categorie` (`id`))
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `c_utilisateur` (`nom`, `id_utilisateur_categorie`, `email`, `mdp_1`) VALUES (:nom:, :id_utilisateur_categorie:, :email:, :mdp_1:)', [...], false)
+ 2 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH/Controllers/Inscription.php(62): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->saveUtilisateur()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-08 11:52:14 --> Class 'App\Models\c_utilisateur' not found
+in APPPATH/Controllers/Inscription.php on line 37.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->saveUtilisateur()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-08 11:52:42 --> Class 'App\Models\Utilisateur' not found
+in APPPATH/Controllers/Inscription.php on line 37.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->saveUtilisateur()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

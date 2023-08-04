@@ -1,0 +1,23 @@
+{
+    "name": "theo/cite-educative",
+    "autoload": {
+        "psr-4": {
+            "Theo\\CiteEducative\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Guy1998",
+            "email": "guillaumetheo92@gmail.com"
+        }
+    ],
+    "require": {
+        "pusher/pusher-php-server": "^2.1",
+        "maatwebsite/excel": "^3.1"
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true
+        }
+    }
+}

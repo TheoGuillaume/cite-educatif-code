@@ -1,0 +1,961 @@
+INFO - 2023-07-12 06:22:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 06:23:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 06:23:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 06:23:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 06:28:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 06:28:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 06:28:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 06:30:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 06:30:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 06:30:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:01:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:02:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-12 08:02:08 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php:174
+Stack trace:
+#0 /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php(174): mysqli->real_connect('localhost', 'root', 'cityeduc', '', 3306, '', 0)
+#1 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /opt/lampp/htdocs/cite-educative/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /opt/lampp/htdocs/cite-educative/system/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/cite-educative/system/BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 /opt/lampp/htdocs/cite-educative/app/Controllers/Inscription.php(170): CodeIgniter\BaseModel->first()
+#7 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(934): App\Controllers\Inscription->saveUtilisateur()
+#8 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+#9 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /opt/lampp/htdocs/cite-educative/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /opt/lampp/htdocs/cite-educative/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /opt/lampp/htdocs/cite-educative/system/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#4 /opt/lampp/htdocs/cite-educative/system/BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 /opt/lampp/htdocs/cite-educative/app/Controllers/Inscription.php(170): CodeIgniter\BaseModel->first()
+#6 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(934): App\Controllers\Inscription->saveUtilisateur()
+#7 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+#8 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/cite-educative/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-07-12 08:02:08 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `c_utilisateur`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/Inscription.php(170): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->saveUtilisateur()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-12 08:02:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:02:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:02:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:02:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:02:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:02:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:04:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:05:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:05:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:05:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-12 08:06:00 --> Object of type App\Models\cs_struct is not callable
+in APPPATH/Controllers/Inscription.php on line 218.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->saveUtilisateur()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-12 08:07:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:07:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:07:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:07:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:07:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:08:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:08:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:08:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:08:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:09:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:09:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:14:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:14:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:14:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:14:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:14:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:14:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:15:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:15:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:16:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:16:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:17:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:17:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:17:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:17:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:17:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:18:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:18:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:18:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:18:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:18:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:18:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:18:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:19:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:19:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:21:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:21:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:21:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:21:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:21:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:21:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:22:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:22:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:22:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:22:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:23:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:24:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:24:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:24:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:24:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:24:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:25:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:25:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:25:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:25:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:25:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:26:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:27:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:27:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:28:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:28:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:29:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:29:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:29:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:29:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:29:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:29:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:30:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:30:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:30:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:30:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:31:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-12 08:31:23 --> Object of type App\Models\cs_struct is not callable
+in APPPATH/Controllers/Inscription.php on line 179.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->saveUtilisateur()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-12 08:31:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:31:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:32:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:32:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:33:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:33:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:33:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:33:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:34:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:34:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:34:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:34:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:34:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:34:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:34:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:34:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:35:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:36:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:37:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:37:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:37:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:37:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:37:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:37:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:37:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:38:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:48:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:48:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:48:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:48:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:48:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:48:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:50:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:50:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:53:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:54:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:54:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:54:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:55:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:55:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:55:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:55:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:55:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:55:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:55:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:55:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:55:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:55:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:55:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:55:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:55:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:55:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:55:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:55:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:55:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:55:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:55:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:55:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:55:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:55:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:56:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:56:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:56:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:56:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:56:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:56:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:56:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:56:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:56:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:56:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:56:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:56:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:56:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:56:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:56:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:56:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:56:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:56:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:56:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:56:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:56:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:56:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:56:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:56:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 08:57:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-12 08:57:02 --> Undefined array key "email"
+in APPPATH/Controllers/Inscription.php on line 1033.
+ 1 APPPATH/Controllers/Inscription.php(1033): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'APPPATH/Controllers/Inscription.php', 1033)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->sessionLogin()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-12 09:01:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 09:01:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 09:01:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 09:02:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 09:02:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 09:02:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 09:03:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 09:04:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-12 09:04:23 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Home.php on line 63.
+ 1 APPPATH/Controllers/Home.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Home.php', 63)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->login()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-12 09:11:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-12 09:11:46 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Home.php on line 64.
+ 1 APPPATH/Controllers/Home.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Home.php', 64)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->login()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-12 09:14:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-12 09:14:43 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Home.php on line 64.
+ 1 APPPATH/Controllers/Home.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Home.php', 64)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->login()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-12 09:16:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 09:16:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 09:28:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 09:28:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-12 09:28:37 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Home.php on line 64.
+ 1 APPPATH/Controllers/Home.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Home.php', 64)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->login()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-12 09:29:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-12 09:29:24 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Home.php on line 64.
+ 1 APPPATH/Controllers/Home.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Home.php', 64)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->login()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-12 09:29:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-12 09:29:48 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Home.php on line 64.
+ 1 APPPATH/Controllers/Home.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Home.php', 64)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->login()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-12 09:30:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-12 09:30:17 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Home.php on line 64.
+ 1 APPPATH/Controllers/Home.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Home.php', 64)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->login()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-12 09:33:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-12 09:33:05 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Home.php on line 64.
+ 1 APPPATH/Controllers/Home.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Home.php', 64)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->login()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-12 09:37:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 09:37:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 09:37:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 09:37:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 09:37:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 09:37:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 10:28:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-12 10:28:37 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo failed: Échec temporaire dans la résolution du nom in /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php:174
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', '/opt/lampp/htdo...', 174)
+#1 /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php(174): mysqli->real_connect('locahost', 'root', '', 'cityeduc', 3306, '', 0)
+#2 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#4 /opt/lampp/htdocs/cite-educative/app/Controllers/LandingPage.php(39): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#5 /opt/lampp/htdocs/cite-educative/app/Controllers/LandingPage.php(95): App\Controllers\LandingPage->fecthNbNotification(84, 3)
+#6 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageTous()
+#7 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+#8 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/cite-educative/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo failed: Échec temporaire dans la résolution du nom in /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php:174
+Stack trace:
+#0 /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php(174): mysqli->real_connect('locahost', 'root', '', 'cityeduc', 3306, '', 0)
+#1 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /opt/lampp/htdocs/cite-educative/app/Controllers/LandingPage.php(39): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#4 /opt/lampp/htdocs/cite-educative/app/Controllers/LandingPage.php(95): App\Controllers\LandingPage->fecthNbNotification(84, 3)
+#5 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageTous()
+#6 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+#7 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/cite-educative/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo failed: Échec temporaire dans la résolution du nom in /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /opt/lampp/htdocs/cite-educative/app/Controllers/LandingPage.php(39): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#3 /opt/lampp/htdocs/cite-educative/app/Controllers/LandingPage.php(95): App\Controllers\LandingPage->fecthNbNotification(84, 3)
+#4 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageTous()
+#5 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+#6 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/cite-educative/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-07-12 10:28:37 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Échec temporaire dans la résolution du nom
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Controllers/LandingPage.php(39): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) as isa FROM v_demande_confimer_struct where v_demande_confimer_struct.id_recepteur =  \'84\' and v_demande_confimer_struct.lu = 0')
+ 3 APPPATH/Controllers/LandingPage.php(95): App\Controllers\LandingPage->fecthNbNotification(84, 3)
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageTous()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-12 10:28:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-12 10:28:40 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo failed: Échec temporaire dans la résolution du nom in /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php:174
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', '/opt/lampp/htdo...', 174)
+#1 /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php(174): mysqli->real_connect('locahost', 'root', '', 'cityeduc', 3306, '', 0)
+#2 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#4 /opt/lampp/htdocs/cite-educative/app/Controllers/LandingPage.php(39): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#5 /opt/lampp/htdocs/cite-educative/app/Controllers/LandingPage.php(95): App\Controllers\LandingPage->fecthNbNotification(84, 3)
+#6 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageTous()
+#7 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+#8 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/cite-educative/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo failed: Échec temporaire dans la résolution du nom in /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php:174
+Stack trace:
+#0 /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php(174): mysqli->real_connect('locahost', 'root', '', 'cityeduc', 3306, '', 0)
+#1 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /opt/lampp/htdocs/cite-educative/app/Controllers/LandingPage.php(39): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#4 /opt/lampp/htdocs/cite-educative/app/Controllers/LandingPage.php(95): App\Controllers\LandingPage->fecthNbNotification(84, 3)
+#5 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageTous()
+#6 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+#7 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/cite-educative/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo failed: Échec temporaire dans la résolution du nom in /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /opt/lampp/htdocs/cite-educative/app/Controllers/LandingPage.php(39): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#3 /opt/lampp/htdocs/cite-educative/app/Controllers/LandingPage.php(95): App\Controllers\LandingPage->fecthNbNotification(84, 3)
+#4 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageTous()
+#5 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+#6 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/cite-educative/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-07-12 10:28:40 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Échec temporaire dans la résolution du nom
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Controllers/LandingPage.php(39): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) as isa FROM v_demande_confimer_struct where v_demande_confimer_struct.id_recepteur =  \'84\' and v_demande_confimer_struct.lu = 0')
+ 3 APPPATH/Controllers/LandingPage.php(95): App\Controllers\LandingPage->fecthNbNotification(84, 3)
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageTous()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-12 10:28:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-12 10:28:54 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo failed: Échec temporaire dans la résolution du nom in /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php:174
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', '/opt/lampp/htdo...', 174)
+#1 /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php(174): mysqli->real_connect('locahost', 'root', '', 'cityeduc', 3306, '', 0)
+#2 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#4 /opt/lampp/htdocs/cite-educative/app/Controllers/LandingPage.php(39): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#5 /opt/lampp/htdocs/cite-educative/app/Controllers/LandingPage.php(95): App\Controllers\LandingPage->fecthNbNotification(84, 3)
+#6 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageTous()
+#7 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+#8 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/cite-educative/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo failed: Échec temporaire dans la résolution du nom in /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php:174
+Stack trace:
+#0 /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php(174): mysqli->real_connect('locahost', 'root', '', 'cityeduc', 3306, '', 0)
+#1 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /opt/lampp/htdocs/cite-educative/app/Controllers/LandingPage.php(39): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#4 /opt/lampp/htdocs/cite-educative/app/Controllers/LandingPage.php(95): App\Controllers\LandingPage->fecthNbNotification(84, 3)
+#5 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageTous()
+#6 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+#7 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/cite-educative/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo failed: Échec temporaire dans la résolution du nom in /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /opt/lampp/htdocs/cite-educative/app/Controllers/LandingPage.php(39): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#3 /opt/lampp/htdocs/cite-educative/app/Controllers/LandingPage.php(95): App\Controllers\LandingPage->fecthNbNotification(84, 3)
+#4 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageTous()
+#5 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+#6 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/cite-educative/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-07-12 10:28:54 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Échec temporaire dans la résolution du nom
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Controllers/LandingPage.php(39): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) as isa FROM v_demande_confimer_struct where v_demande_confimer_struct.id_recepteur =  \'84\' and v_demande_confimer_struct.lu = 0')
+ 3 APPPATH/Controllers/LandingPage.php(95): App\Controllers\LandingPage->fecthNbNotification(84, 3)
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageTous()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-12 10:28:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 10:29:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 11:02:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 11:03:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 11:04:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 11:13:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 11:13:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 11:13:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 11:14:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-12 11:14:05 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo failed: Échec temporaire dans la résolution du nom in /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php:174
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', '/opt/lampp/htdo...', 174)
+#1 /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php(174): mysqli->real_connect('locahost', 'root', '', 'cityeduc', 3306, '', 0)
+#2 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#4 /opt/lampp/htdocs/cite-educative/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 /opt/lampp/htdocs/cite-educative/system/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#6 /opt/lampp/htdocs/cite-educative/system/BaseModel.php(656): CodeIgniter\Model->doFirst()
+#7 /opt/lampp/htdocs/cite-educative/app/Controllers/Inscription.php(172): CodeIgniter\BaseModel->first()
+#8 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(934): App\Controllers\Inscription->saveUtilisateur()
+#9 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+#10 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /opt/lampp/htdocs/cite-educative/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo failed: Échec temporaire dans la résolution du nom in /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php:174
+Stack trace:
+#0 /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php(174): mysqli->real_connect('locahost', 'root', '', 'cityeduc', 3306, '', 0)
+#1 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /opt/lampp/htdocs/cite-educative/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /opt/lampp/htdocs/cite-educative/system/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/cite-educative/system/BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 /opt/lampp/htdocs/cite-educative/app/Controllers/Inscription.php(172): CodeIgniter\BaseModel->first()
+#7 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(934): App\Controllers\Inscription->saveUtilisateur()
+#8 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+#9 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /opt/lampp/htdocs/cite-educative/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo failed: Échec temporaire dans la résolution du nom in /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /opt/lampp/htdocs/cite-educative/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /opt/lampp/htdocs/cite-educative/system/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#4 /opt/lampp/htdocs/cite-educative/system/BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 /opt/lampp/htdocs/cite-educative/app/Controllers/Inscription.php(172): CodeIgniter\BaseModel->first()
+#6 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(934): App\Controllers\Inscription->saveUtilisateur()
+#7 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+#8 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/cite-educative/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-07-12 11:14:05 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Échec temporaire dans la résolution du nom
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `c_utilisateur`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/Inscription.php(172): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->saveUtilisateur()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-12 11:15:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 11:15:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 11:15:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 11:15:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 11:15:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 11:16:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 11:16:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 11:16:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 11:16:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 11:16:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 11:16:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 11:16:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 11:16:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 11:16:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 11:16:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 11:16:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 11:16:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 11:16:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 11:16:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 11:16:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 11:16:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 11:16:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 11:16:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 11:17:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 11:17:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 11:17:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 11:17:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 11:17:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 11:17:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-12 13:20:04 --> Undefined variable $file
+in APPPATH/Views/profil/profil_structure.php on line 254.
+ 1 APPPATH/Views/profil/profil_structure.php(254): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $file', 'APPPATH/Views/profil/profil_structure.php', 254)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profil/profil_structure.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('profil/profil_structure', [], true)
+ 5 APPPATH/Controllers/Profil.php(107): view('profil/profil_structure', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Profil->profil()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-12 13:21:29 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/LandingPage.php on line 134.
+ 1 APPPATH/Controllers/LandingPage.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/LandingPage.php', 134)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageDetail('FCPATH/assets', 'fontawesome', 'css', 'fontawesome.css')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-12 13:21:29 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/LandingPage.php on line 134.
+ 1 APPPATH/Controllers/LandingPage.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/LandingPage.php', 134)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageDetail('FCPATH/assets', 'fontawesome', 'css', 'all.min.css')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-12 13:22:26 --> Undefined variable $file
+in APPPATH/Views/profil/profil_structure.php on line 254.
+ 1 APPPATH/Views/profil/profil_structure.php(254): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $file', 'APPPATH/Views/profil/profil_structure.php', 254)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profil/profil_structure.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('profil/profil_structure', [], true)
+ 5 APPPATH/Controllers/Profil.php(107): view('profil/profil_structure', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Profil->profil()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-12 13:23:37 --> Undefined variable $notif
+in APPPATH/Views/static/landingPage/header.php on line 78.
+ 1 APPPATH/Views/static/landingPage/header.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $notif', 'APPPATH/Views/static/landingPage/header.php', 78)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/static/landingPage/header.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('static/landingPage/header', [], true)
+ 5 APPPATH/Controllers/Profil.php(105): view('static/landingPage/header')
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Profil->profil()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-12 13:24:34 --> Undefined variable $notif
+in APPPATH/Views/static/landingPage/header.php on line 78.
+ 1 APPPATH/Views/static/landingPage/header.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $notif', 'APPPATH/Views/static/landingPage/header.php', 78)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/static/landingPage/header.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('static/landingPage/header', [], true)
+ 5 APPPATH/Controllers/Profil.php(105): view('static/landingPage/header')
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Profil->profil()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-12 13:25:23 --> Undefined variable $structs
+in APPPATH/Views/profil/profil_structure.php on line 61.
+ 1 APPPATH/Views/profil/profil_structure.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $structs', 'APPPATH/Views/profil/profil_structure.php', 61)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profil/profil_structure.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('profil/profil_structure', [], true)
+ 5 APPPATH/Controllers/Profil.php(106): view('profil/profil_structure')
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Profil->profil()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-12 13:26:10 --> Error connecting to the database: mysqli_sql_exception: Connexion terminée par expiration du délai d'attente in /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php:174
+Stack trace:
+#0 /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php(174): mysqli->real_connect('192.168.88.33', 'root', 'root', 'h4tec_agoracgag...', 3306, '', 0)
+#1 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /opt/lampp/htdocs/cite-educative/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /opt/lampp/htdocs/cite-educative/system/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/cite-educative/system/BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 /opt/lampp/htdocs/cite-educative/app/Controllers/Profil.php(36): CodeIgniter\BaseModel->first()
+#7 /opt/lampp/htdocs/cite-educative/app/Controllers/Profil.php(62): App\Controllers\Profil->fecthNbNotification(131, 2)
+#8 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(934): App\Controllers\Profil->profil()
+#9 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+#10 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /opt/lampp/htdocs/cite-educative/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connexion terminée par expiration du délai d'attente in /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /opt/lampp/htdocs/cite-educative/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 /opt/lampp/htdocs/cite-educative/system/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#4 /opt/lampp/htdocs/cite-educative/system/BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 /opt/lampp/htdocs/cite-educative/app/Controllers/Profil.php(36): CodeIgniter\BaseModel->first()
+#6 /opt/lampp/htdocs/cite-educative/app/Controllers/Profil.php(62): App\Controllers\Profil->fecthNbNotification(131, 2)
+#7 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(934): App\Controllers\Profil->profil()
+#8 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+#9 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /opt/lampp/htdocs/cite-educative/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-12 13:26:10 --> Unable to connect to the database.
+Main connection [MySQLi]: Connexion terminée par expiration du délai d'attente
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `isa`
+FROM `c_notification`
+WHERE `id_recepteur` = :id_recepteur:
+AND `lu` = :lu:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/Profil.php(36): CodeIgniter\BaseModel->first()
+ 6 APPPATH/Controllers/Profil.php(62): App\Controllers\Profil->fecthNbNotification(131, 2)
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Profil->profil()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-12 13:26:23 --> Undefined variable $structs
+in APPPATH/Views/profil/profil_structure.php on line 61.
+ 1 APPPATH/Views/profil/profil_structure.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $structs', 'APPPATH/Views/profil/profil_structure.php', 61)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profil/profil_structure.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('profil/profil_structure', [], true)
+ 5 APPPATH/Controllers/Profil.php(107): view('profil/profil_structure')
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Profil->profil()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-12 13:28:55 --> Undefined variable $file
+in APPPATH/Views/profil/profil_structure.php on line 254.
+ 1 APPPATH/Views/profil/profil_structure.php(254): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $file', 'APPPATH/Views/profil/profil_structure.php', 254)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profil/profil_structure.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('profil/profil_structure', [], true)
+ 5 APPPATH/Controllers/Profil.php(107): view('profil/profil_structure', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Profil->profil()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-12 13:30:36 --> Undefined variable $file
+in APPPATH/Views/profil/profil_structure.php on line 216.
+ 1 APPPATH/Views/profil/profil_structure.php(216): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $file', 'APPPATH/Views/profil/profil_structure.php', 216)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profil/profil_structure.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('profil/profil_structure', [], true)
+ 5 APPPATH/Controllers/Profil.php(107): view('profil/profil_structure', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Profil->profil()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-12 13:31:11 --> Undefined variable $file
+in APPPATH/Views/profil/profil_structure.php on line 81.
+ 1 APPPATH/Views/profil/profil_structure.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $file', 'APPPATH/Views/profil/profil_structure.php', 81)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profil/profil_structure.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('profil/profil_structure', [], true)
+ 5 APPPATH/Controllers/Profil.php(107): view('profil/profil_structure', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Profil->profil()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-12 13:34:50 --> Undefined variable $file
+in APPPATH/Views/profil/profil_structure.php on line 254.
+ 1 APPPATH/Views/profil/profil_structure.php(254): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $file', 'APPPATH/Views/profil/profil_structure.php', 254)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profil/profil_structure.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('profil/profil_structure', [], true)
+ 5 APPPATH/Controllers/Profil.php(107): view('profil/profil_structure', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Profil->profil()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-12 13:35:49 --> Error connecting to the database: mysqli_sql_exception: Connexion terminée par expiration du délai d'attente in /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php:174
+Stack trace:
+#0 /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php(174): mysqli->real_connect('192.168.88.33', 'root', 'root', 'h4tec_agoracgag...', 3306, '', 0)
+#1 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /opt/lampp/htdocs/cite-educative/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /opt/lampp/htdocs/cite-educative/system/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/cite-educative/system/BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 /opt/lampp/htdocs/cite-educative/app/Controllers/Profil.php(36): CodeIgniter\BaseModel->first()
+#7 /opt/lampp/htdocs/cite-educative/app/Controllers/Profil.php(62): App\Controllers\Profil->fecthNbNotification(131, 2)
+#8 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(934): App\Controllers\Profil->profil()
+#9 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+#10 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /opt/lampp/htdocs/cite-educative/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connexion terminée par expiration du délai d'attente in /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /opt/lampp/htdocs/cite-educative/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 /opt/lampp/htdocs/cite-educative/system/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#4 /opt/lampp/htdocs/cite-educative/system/BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 /opt/lampp/htdocs/cite-educative/app/Controllers/Profil.php(36): CodeIgniter\BaseModel->first()
+#6 /opt/lampp/htdocs/cite-educative/app/Controllers/Profil.php(62): App\Controllers\Profil->fecthNbNotification(131, 2)
+#7 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(934): App\Controllers\Profil->profil()
+#8 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+#9 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /opt/lampp/htdocs/cite-educative/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-12 13:35:49 --> Unable to connect to the database.
+Main connection [MySQLi]: Connexion terminée par expiration du délai d'attente
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `isa`
+FROM `c_notification`
+WHERE `id_recepteur` = :id_recepteur:
+AND `lu` = :lu:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/Profil.php(36): CodeIgniter\BaseModel->first()
+ 6 APPPATH/Controllers/Profil.php(62): App\Controllers\Profil->fecthNbNotification(131, 2)
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Profil->profil()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-12 13:36:05 --> Error connecting to the database: mysqli_sql_exception: Connexion terminée par expiration du délai d'attente in /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php:174
+Stack trace:
+#0 /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php(174): mysqli->real_connect('192.168.88.33', 'root', 'root', 'h4tec_agoracgag...', 3306, '', 0)
+#1 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /opt/lampp/htdocs/cite-educative/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /opt/lampp/htdocs/cite-educative/system/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/cite-educative/system/BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 /opt/lampp/htdocs/cite-educative/app/Controllers/Profil.php(36): CodeIgniter\BaseModel->first()
+#7 /opt/lampp/htdocs/cite-educative/app/Controllers/Profil.php(62): App\Controllers\Profil->fecthNbNotification(131, 2)
+#8 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(934): App\Controllers\Profil->profil()
+#9 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+#10 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /opt/lampp/htdocs/cite-educative/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connexion terminée par expiration du délai d'attente in /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /opt/lampp/htdocs/cite-educative/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 /opt/lampp/htdocs/cite-educative/system/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#4 /opt/lampp/htdocs/cite-educative/system/BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 /opt/lampp/htdocs/cite-educative/app/Controllers/Profil.php(36): CodeIgniter\BaseModel->first()
+#6 /opt/lampp/htdocs/cite-educative/app/Controllers/Profil.php(62): App\Controllers\Profil->fecthNbNotification(131, 2)
+#7 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(934): App\Controllers\Profil->profil()
+#8 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+#9 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /opt/lampp/htdocs/cite-educative/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-12 13:36:05 --> Unable to connect to the database.
+Main connection [MySQLi]: Connexion terminée par expiration du délai d'attente
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `isa`
+FROM `c_notification`
+WHERE `id_recepteur` = :id_recepteur:
+AND `lu` = :lu:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/Profil.php(36): CodeIgniter\BaseModel->first()
+ 6 APPPATH/Controllers/Profil.php(62): App\Controllers\Profil->fecthNbNotification(131, 2)
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Profil->profil()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-12 13:36:41 --> Undefined variable $file
+in APPPATH/Views/profil/profil_structure.php on line 254.
+ 1 APPPATH/Views/profil/profil_structure.php(254): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $file', 'APPPATH/Views/profil/profil_structure.php', 254)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profil/profil_structure.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('profil/profil_structure', [], true)
+ 5 APPPATH/Controllers/Profil.php(107): view('profil/profil_structure', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Profil->profil()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-12 13:37:01 --> Undefined variable $file
+in APPPATH/Views/profil/profil_structure.php on line 254.
+ 1 APPPATH/Views/profil/profil_structure.php(254): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $file', 'APPPATH/Views/profil/profil_structure.php', 254)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profil/profil_structure.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('profil/profil_structure', [], true)
+ 5 APPPATH/Controllers/Profil.php(107): view('profil/profil_structure', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Profil->profil()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-12 13:41:20 --> Undefined variable $i
+in APPPATH/Views/profil/profil_structure.php on line 254.
+ 1 APPPATH/Views/profil/profil_structure.php(254): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $i', 'APPPATH/Views/profil/profil_structure.php', 254)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profil/profil_structure.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('profil/profil_structure', [], true)
+ 5 APPPATH/Controllers/Profil.php(107): view('profil/profil_structure', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Profil->profil()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-12 13:42:25 --> Undefined variable $i
+in APPPATH/Views/profil/profil_structure.php on line 256.
+ 1 APPPATH/Views/profil/profil_structure.php(256): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $i', 'APPPATH/Views/profil/profil_structure.php', 256)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profil/profil_structure.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('profil/profil_structure', [], true)
+ 5 APPPATH/Controllers/Profil.php(107): view('profil/profil_structure', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Profil->profil()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-12 13:50:38 --> Undefined variable $i
+in APPPATH/Views/profil/profil_structure.php on line 256.
+ 1 APPPATH/Views/profil/profil_structure.php(256): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $i', 'APPPATH/Views/profil/profil_structure.php', 256)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profil/profil_structure.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('profil/profil_structure', [], true)
+ 5 APPPATH/Controllers/Profil.php(107): view('profil/profil_structure', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Profil->profil()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-12 13:50:59 --> Undefined variable $i
+in APPPATH/Views/profil/profil_structure.php on line 256.
+ 1 APPPATH/Views/profil/profil_structure.php(256): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $i', 'APPPATH/Views/profil/profil_structure.php', 256)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profil/profil_structure.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('profil/profil_structure', [], true)
+ 5 APPPATH/Controllers/Profil.php(107): view('profil/profil_structure', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Profil->profil()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-12 14:01:49 --> syntax error, unexpected token "else"
+in APPPATH/Views/profil/profil_structure.php on line 263.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('profil/profil_structure', [], true)
+ 3 APPPATH/Controllers/Profil.php(107): view('profil/profil_structure', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Profil->profil()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-12 14:03:14 --> syntax error, unexpected token "else"
+in APPPATH/Views/profil/profil_structure.php on line 264.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('profil/profil_structure', [], true)
+ 3 APPPATH/Controllers/Profil.php(107): view('profil/profil_structure', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Profil->profil()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-12 14:06:40 --> Error connecting to the database: mysqli_sql_exception: Connexion terminée par expiration du délai d'attente in /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php:174
+Stack trace:
+#0 /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php(174): mysqli->real_connect('192.168.88.33', 'root', 'root', 'h4tec_agoracgag...', 3306, '', 0)
+#1 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /opt/lampp/htdocs/cite-educative/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /opt/lampp/htdocs/cite-educative/system/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/cite-educative/system/BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 /opt/lampp/htdocs/cite-educative/app/Controllers/Profil.php(36): CodeIgniter\BaseModel->first()
+#7 /opt/lampp/htdocs/cite-educative/app/Controllers/Profil.php(62): App\Controllers\Profil->fecthNbNotification(131, 2)
+#8 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(934): App\Controllers\Profil->profil()
+#9 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+#10 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /opt/lampp/htdocs/cite-educative/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connexion terminée par expiration du délai d'attente in /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /opt/lampp/htdocs/cite-educative/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 /opt/lampp/htdocs/cite-educative/system/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#4 /opt/lampp/htdocs/cite-educative/system/BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 /opt/lampp/htdocs/cite-educative/app/Controllers/Profil.php(36): CodeIgniter\BaseModel->first()
+#6 /opt/lampp/htdocs/cite-educative/app/Controllers/Profil.php(62): App\Controllers\Profil->fecthNbNotification(131, 2)
+#7 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(934): App\Controllers\Profil->profil()
+#8 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+#9 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /opt/lampp/htdocs/cite-educative/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-12 14:06:40 --> Unable to connect to the database.
+Main connection [MySQLi]: Connexion terminée par expiration du délai d'attente
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `isa`
+FROM `c_notification`
+WHERE `id_recepteur` = :id_recepteur:
+AND `lu` = :lu:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/Profil.php(36): CodeIgniter\BaseModel->first()
+ 6 APPPATH/Controllers/Profil.php(62): App\Controllers\Profil->fecthNbNotification(131, 2)
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Profil->profil()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

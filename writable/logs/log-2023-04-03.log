@@ -1,0 +1,36 @@
+CRITICAL - 2023-04-03 07:52:29 --> include(map.php): failed to open stream: Aucun fichier ou dossier de ce type
+in APPPATH/Views/inscription/structure/inscription_structure_0.php on line 65.
+ 1 APPPATH/Views/inscription/structure/inscription_structure_0.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(map.php): failed to open stream: Aucun fichier ou dossier de ce type', 'APPPATH/Views/inscription/structure/inscription_structure_0.php', 65, [])
+ 2 APPPATH/Views/inscription/structure/inscription_structure_0.php(65): include()
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/inscription/structure/inscription_structure_0.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('inscription/structure/inscription_structure_0', [], true)
+ 6 APPPATH/Controllers/Inscription.php(17): view('inscription/structure/inscription_structure_0')
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->inscriptionStructureZero()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-03 07:53:46 --> include(../../map/map.php): failed to open stream: Aucun fichier ou dossier de ce type
+in APPPATH/Views/inscription/structure/inscription_structure_0.php on line 65.
+ 1 APPPATH/Views/inscription/structure/inscription_structure_0.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(../../map/map.php): failed to open stream: Aucun fichier ou dossier de ce type', 'APPPATH/Views/inscription/structure/inscription_structure_0.php', 65, [])
+ 2 APPPATH/Views/inscription/structure/inscription_structure_0.php(65): include()
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/inscription/structure/inscription_structure_0.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('inscription/structure/inscription_structure_0', [], true)
+ 6 APPPATH/Controllers/Inscription.php(17): view('inscription/structure/inscription_structure_0')
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->inscriptionStructureZero()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-03 07:54:35 --> include(../../map/map.php): failed to open stream: Aucun fichier ou dossier de ce type
+in APPPATH/Views/inscription/structure/inscription_structure_0.php on line 65.
+ 1 APPPATH/Views/inscription/structure/inscription_structure_0.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(../../map/map.php): failed to open stream: Aucun fichier ou dossier de ce type', 'APPPATH/Views/inscription/structure/inscription_structure_0.php', 65, [])
+ 2 APPPATH/Views/inscription/structure/inscription_structure_0.php(65): include()
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/inscription/structure/inscription_structure_0.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('inscription/structure/inscription_structure_0', [], true)
+ 6 APPPATH/Controllers/Inscription.php(17): view('inscription/structure/inscription_structure_0')
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->inscriptionStructureZero()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

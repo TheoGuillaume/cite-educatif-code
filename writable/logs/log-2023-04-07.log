@@ -1,0 +1,71 @@
+CRITICAL - 2023-04-07 20:32:08 --> count(): Parameter must be an array or an object that implements Countable
+in APPPATH/Controllers/Inscription.php on line 260.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parameter must be an array or an object that implements Countable', 'APPPATH/Controllers/Inscription.php', 260, [...])
+ 2 APPPATH/Controllers/Inscription.php(260): count('HTML')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->inscriptionStructureChampActionSave()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-07 20:38:15 --> count(): Parameter must be an array or an object that implements Countable
+in APPPATH/Controllers/Inscription.php on line 260.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parameter must be an array or an object that implements Countable', 'APPPATH/Controllers/Inscription.php', 260, [...])
+ 2 APPPATH/Controllers/Inscription.php(260): count('JavaScript')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->inscriptionStructureChampActionSave()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-07 20:49:03 --> count(): Parameter must be an array or an object that implements Countable
+in APPPATH/Controllers/Inscription.php on line 263.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parameter must be an array or an object that implements Countable', 'APPPATH/Controllers/Inscription.php', 263, [...])
+ 2 APPPATH/Controllers/Inscription.php(263): count('JavaScript')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->inscriptionStructureChampActionSave()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-07 20:49:58 --> Invalid argument supplied for foreach()
+in APPPATH/Controllers/Inscription.php on line 260.
+ 1 APPPATH/Controllers/Inscription.php(260): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH/Controllers/Inscription.php', 260, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->inscriptionStructureChampActionSave()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-07 21:09:48 --> sizeof(): Parameter must be an array or an object that implements Countable
+in APPPATH/Controllers/Inscription.php on line 257.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'sizeof(): Parameter must be an array or an object that implements Countable', 'APPPATH/Controllers/Inscription.php', 257, [...])
+ 2 APPPATH/Controllers/Inscription.php(257): sizeof(null)
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->inscriptionStructureChampActionSave()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-07 21:11:22 --> sizeof(): Parameter must be an array or an object that implements Countable
+in APPPATH/Controllers/Inscription.php on line 258.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'sizeof(): Parameter must be an array or an object that implements Countable', 'APPPATH/Controllers/Inscription.php', 258, [...])
+ 2 APPPATH/Controllers/Inscription.php(258): sizeof(null)
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->inscriptionStructureChampActionSave()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-07 21:22:40 --> sizeof(): Parameter must be an array or an object that implements Countable
+in APPPATH/Controllers/Inscription.php on line 258.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'sizeof(): Parameter must be an array or an object that implements Countable', 'APPPATH/Controllers/Inscription.php', 258, [...])
+ 2 APPPATH/Controllers/Inscription.php(258): sizeof(null)
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->inscriptionStructureChampActionSave()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-07 21:29:38 --> sizeof(): Parameter must be an array or an object that implements Countable
+in APPPATH/Controllers/Inscription.php on line 273.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'sizeof(): Parameter must be an array or an object that implements Countable', 'APPPATH/Controllers/Inscription.php', 273, [...])
+ 2 APPPATH/Controllers/Inscription.php(273): sizeof(null)
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->inscriptionStructureChampActionSave()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-07 21:31:50 --> sizeof(): Parameter must be an array or an object that implements Countable
+in APPPATH/Controllers/Inscription.php on line 273.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'sizeof(): Parameter must be an array or an object that implements Countable', 'APPPATH/Controllers/Inscription.php', 273, [...])
+ 2 APPPATH/Controllers/Inscription.php(273): sizeof(null)
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->inscriptionStructureChampActionSave()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

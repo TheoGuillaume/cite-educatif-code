@@ -1,0 +1,1 @@
+ALTER TABLE ca_acteur ALTER etat SET DEFAULT 0 ;

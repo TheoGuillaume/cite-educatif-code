@@ -1,0 +1,406 @@
+ERROR - 2023-07-06 07:03:26 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo failed: Échec temporaire dans la résolution du nom in /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php:174
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', '/opt/lampp/htdo...', 174)
+#1 /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php(174): mysqli->real_connect('mysql', 'root', '', 'cityeduc', 3306, '', 0)
+#2 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#4 /opt/lampp/htdocs/cite-educative/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 /opt/lampp/htdocs/cite-educative/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#6 /opt/lampp/htdocs/cite-educative/system/BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#7 /opt/lampp/htdocs/cite-educative/app/Controllers/Inscription.php(119): CodeIgniter\BaseModel->findAll()
+#8 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(934): App\Controllers\Inscription->saveUtilisateur()
+#9 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+#10 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /opt/lampp/htdocs/cite-educative/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo failed: Échec temporaire dans la résolution du nom in /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php:174
+Stack trace:
+#0 /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php(174): mysqli->real_connect('mysql', 'root', '', 'cityeduc', 3306, '', 0)
+#1 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /opt/lampp/htdocs/cite-educative/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /opt/lampp/htdocs/cite-educative/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/cite-educative/system/BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 /opt/lampp/htdocs/cite-educative/app/Controllers/Inscription.php(119): CodeIgniter\BaseModel->findAll()
+#7 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(934): App\Controllers\Inscription->saveUtilisateur()
+#8 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+#9 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /opt/lampp/htdocs/cite-educative/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo failed: Échec temporaire dans la résolution du nom in /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /opt/lampp/htdocs/cite-educative/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /opt/lampp/htdocs/cite-educative/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 /opt/lampp/htdocs/cite-educative/system/BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 /opt/lampp/htdocs/cite-educative/app/Controllers/Inscription.php(119): CodeIgniter\BaseModel->findAll()
+#6 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(934): App\Controllers\Inscription->saveUtilisateur()
+#7 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+#8 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/cite-educative/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-07-06 07:03:26 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Échec temporaire dans la résolution du nom
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `c_utilisateur`
+WHERE `email` = :email:', [...], false)
+ 3 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Controllers/Inscription.php(119): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->saveUtilisateur()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-06 07:06:36 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`cityeduc`.`c_utilisateur`, CONSTRAINT `c_utilisateur_ibfk_1` FOREIGN KEY (`id_utilisateur_categorie`) REFERENCES `c_utilisateur_categorie` (`id`)) in /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `c_...', 0)
+#1 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `c_...')
+#2 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `c_...')
+#3 /opt/lampp/htdocs/cite-educative/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `c_...', Array, false)
+#4 /opt/lampp/htdocs/cite-educative/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 /opt/lampp/htdocs/cite-educative/system/BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 /opt/lampp/htdocs/cite-educative/system/Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 /opt/lampp/htdocs/cite-educative/app/Controllers/Inscription.php(133): CodeIgniter\Model->insert(Array)
+#8 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(934): App\Controllers\Inscription->saveUtilisateur()
+#9 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+#10 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /opt/lampp/htdocs/cite-educative/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-07-06 07:06:36 --> Cannot add or update a child row: a foreign key constraint fails (`cityeduc`.`c_utilisateur`, CONSTRAINT `c_utilisateur_ibfk_1` FOREIGN KEY (`id_utilisateur_categorie`) REFERENCES `c_utilisateur_categorie` (`id`))
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `c_utilisateur` (`nom`, `id_utilisateur_categorie`, `email`, `mdp_1`) VALUES (:nom:, :id_utilisateur_categorie:, :email:, :mdp_1:)', [...], false)
+ 2 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH/Controllers/Inscription.php(133): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->saveUtilisateur()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-06 07:24:06 --> Call to a member function isValid() on null
+in APPPATH/Controllers/Inscription.php on line 753.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->inscriptionStructureUploadFileSave()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-06 07:32:35 --> Call to a member function isValid() on null
+in APPPATH/Controllers/Inscription.php on line 753.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->inscriptionStructureUploadFileSave()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-06 07:33:44 --> Call to a member function isValid() on null
+in APPPATH/Controllers/Inscription.php on line 753.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->inscriptionStructureUploadFileSave()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-06 07:43:24 --> Undefined variable $file
+in APPPATH/Views/profil/profil_structure.php on line 254.
+ 1 APPPATH/Views/profil/profil_structure.php(254): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $file', 'APPPATH/Views/profil/profil_structure.php', 254)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profil/profil_structure.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('profil/profil_structure', [], true)
+ 5 APPPATH/Controllers/Profil.php(107): view('profil/profil_structure', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Profil->profil()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-06 08:56:13 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2023-07-06 08:56:13 --> 
+ERROR - 2023-07-06 08:56:50 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2023-07-06 08:56:50 --> 
+ERROR - 2023-07-06 08:58:56 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2023-07-06 08:58:56 --> 
+ERROR - 2023-07-06 09:01:39 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL/TLS already set-up for this stream in /opt/lampp/htdocs/cite-educative/system/Email/Email.php:1886
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'stream_socket_e...', '/opt/lampp/htdo...', 1886)
+#1 /opt/lampp/htdocs/cite-educative/system/Email/Email.php(1886): stream_socket_enable_crypto(Resource id #102, true, 57)
+#2 /opt/lampp/htdocs/cite-educative/system/Email/Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 /opt/lampp/htdocs/cite-educative/system/Email/Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /opt/lampp/htdocs/cite-educative/system/Email/Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 /opt/lampp/htdocs/cite-educative/app/Controllers/SendEmailController.php(20): CodeIgniter\Email\Email->send()
+#6 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(934): App\Controllers\SendEmailController->sendEmail()
+#7 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SendEmailController))
+#8 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/cite-educative/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-07-06 09:01:39 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-07-06 09:01:39 --> 220 ESMTP smtp.hostinger.com
+
+hello: 250-smtp.hostinger.com
+250-PIPELINING
+250-SIZE 48811212
+250-ETRN
+250-AUTH PLAIN LOGIN
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 CHUNKING
+
+starttls: 554 5.5.1 Error: TLS already active
+
+The following SMTP error was encountered: 554 5.5.1 Error: TLS already active
+
+ERROR - 2023-07-06 09:02:46 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL/TLS already set-up for this stream in /opt/lampp/htdocs/cite-educative/system/Email/Email.php:1886
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'stream_socket_e...', '/opt/lampp/htdo...', 1886)
+#1 /opt/lampp/htdocs/cite-educative/system/Email/Email.php(1886): stream_socket_enable_crypto(Resource id #101, true, 57)
+#2 /opt/lampp/htdocs/cite-educative/system/Email/Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 /opt/lampp/htdocs/cite-educative/system/Email/Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /opt/lampp/htdocs/cite-educative/system/Email/Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 /opt/lampp/htdocs/cite-educative/app/Controllers/SendEmailController.php(20): CodeIgniter\Email\Email->send()
+#6 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(934): App\Controllers\SendEmailController->sendEmail()
+#7 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SendEmailController))
+#8 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/cite-educative/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-07-06 09:02:46 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-07-06 09:02:46 --> 220 ESMTP smtp.hostinger.com
+
+hello: 250-smtp.hostinger.com
+250-PIPELINING
+250-SIZE 48811212
+250-ETRN
+250-AUTH PLAIN LOGIN
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 CHUNKING
+
+starttls: 554 5.5.1 Error: TLS already active
+
+The following SMTP error was encountered: 554 5.5.1 Error: TLS already active
+
+ERROR - 2023-07-06 09:04:12 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL/TLS already set-up for this stream in /opt/lampp/htdocs/cite-educative/system/Email/Email.php:1886
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'stream_socket_e...', '/opt/lampp/htdo...', 1886)
+#1 /opt/lampp/htdocs/cite-educative/system/Email/Email.php(1886): stream_socket_enable_crypto(Resource id #101, true, 57)
+#2 /opt/lampp/htdocs/cite-educative/system/Email/Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 /opt/lampp/htdocs/cite-educative/system/Email/Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /opt/lampp/htdocs/cite-educative/system/Email/Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 /opt/lampp/htdocs/cite-educative/app/Controllers/SendEmailController.php(20): CodeIgniter\Email\Email->send()
+#6 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(934): App\Controllers\SendEmailController->sendEmail()
+#7 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SendEmailController))
+#8 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/cite-educative/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-07-06 09:04:12 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-07-06 09:04:12 --> 220 ESMTP smtp.hostinger.com
+
+hello: 250-smtp.hostinger.com
+250-PIPELINING
+250-SIZE 48811212
+250-ETRN
+250-AUTH PLAIN LOGIN
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 CHUNKING
+
+starttls: 554 5.5.1 Error: TLS already active
+
+The following SMTP error was encountered: 554 5.5.1 Error: TLS already active
+
+ERROR - 2023-07-06 09:05:53 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL/TLS already set-up for this stream in /opt/lampp/htdocs/cite-educative/system/Email/Email.php:1886
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'stream_socket_e...', '/opt/lampp/htdo...', 1886)
+#1 /opt/lampp/htdocs/cite-educative/system/Email/Email.php(1886): stream_socket_enable_crypto(Resource id #101, true, 57)
+#2 /opt/lampp/htdocs/cite-educative/system/Email/Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 /opt/lampp/htdocs/cite-educative/system/Email/Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /opt/lampp/htdocs/cite-educative/system/Email/Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 /opt/lampp/htdocs/cite-educative/app/Controllers/SendEmailController.php(20): CodeIgniter\Email\Email->send()
+#6 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(934): App\Controllers\SendEmailController->sendEmail()
+#7 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SendEmailController))
+#8 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/cite-educative/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-07-06 09:05:53 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-07-06 09:05:53 --> 220 ESMTP smtp.hostinger.com
+
+hello: 250-smtp.hostinger.com
+250-PIPELINING
+250-SIZE 48811212
+250-ETRN
+250-AUTH PLAIN LOGIN
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 CHUNKING
+
+starttls: 554 5.5.1 Error: TLS already active
+
+The following SMTP error was encountered: 554 5.5.1 Error: TLS already active
+
+CRITICAL - 2023-07-06 10:41:26 --> Class "App\Controllers\DateTime" not found
+in APPPATH/Controllers/SendEmailController.php on line 18.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\SendEmailController->sendEmailChangePassword()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SendEmailController))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-06 10:43:43 --> Call to a member function add() on string
+in APPPATH/Controllers/SendEmailController.php on line 19.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\SendEmailController->sendEmailChangePassword()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SendEmailController))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-06 10:44:05 --> Call to a member function add() on string
+in APPPATH/Controllers/SendEmailController.php on line 19.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\SendEmailController->sendEmailChangePassword()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SendEmailController))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-06 10:44:07 --> Call to a member function add() on string
+in APPPATH/Controllers/SendEmailController.php on line 19.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\SendEmailController->sendEmailChangePassword()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SendEmailController))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-06 10:44:39 --> Call to a member function add() on string
+in APPPATH/Controllers/SendEmailController.php on line 19.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\SendEmailController->sendEmailChangePassword()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SendEmailController))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-06 13:22:46 --> Undefined variable $route
+in APPPATH/Config/Routes.php on line 57.
+ 1 APPPATH/Config/Routes.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $route', 'APPPATH/Config/Routes.php', 57)
+ 2 SYSTEMPATH/Router/RouteCollection.php(267): require('APPPATH/Config/Routes.php')
+ 3 SYSTEMPATH/CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH/CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-06 13:23:24 --> Undefined variable $route
+in APPPATH/Config/Routes.php on line 57.
+ 1 APPPATH/Config/Routes.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $route', 'APPPATH/Config/Routes.php', 57)
+ 2 SYSTEMPATH/Router/RouteCollection.php(267): require('APPPATH/Config/Routes.php')
+ 3 SYSTEMPATH/CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH/CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-06 13:23:25 --> Undefined variable $route
+in APPPATH/Config/Routes.php on line 57.
+ 1 APPPATH/Config/Routes.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $route', 'APPPATH/Config/Routes.php', 57)
+ 2 SYSTEMPATH/Router/RouteCollection.php(267): require('APPPATH/Config/Routes.php')
+ 3 SYSTEMPATH/CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH/CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-06 13:23:26 --> Undefined variable $route
+in APPPATH/Config/Routes.php on line 57.
+ 1 APPPATH/Config/Routes.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $route', 'APPPATH/Config/Routes.php', 57)
+ 2 SYSTEMPATH/Router/RouteCollection.php(267): require('APPPATH/Config/Routes.php')
+ 3 SYSTEMPATH/CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH/CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-06 13:23:26 --> Undefined variable $route
+in APPPATH/Config/Routes.php on line 57.
+ 1 APPPATH/Config/Routes.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $route', 'APPPATH/Config/Routes.php', 57)
+ 2 SYSTEMPATH/Router/RouteCollection.php(267): require('APPPATH/Config/Routes.php')
+ 3 SYSTEMPATH/CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH/CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-06 13:24:08 --> Undefined variable $route
+in APPPATH/Config/Routes.php on line 57.
+ 1 APPPATH/Config/Routes.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $route', 'APPPATH/Config/Routes.php', 57)
+ 2 SYSTEMPATH/Router/RouteCollection.php(267): require('APPPATH/Config/Routes.php')
+ 3 SYSTEMPATH/CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH/CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-06 14:28:20 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL: Handshake timed out in /opt/lampp/htdocs/cite-educative/system/Email/Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', '/opt/lampp/htdo...', 1868)
+#1 /opt/lampp/htdocs/cite-educative/system/Email/Email.php(1868): fsockopen('tls://smtp.host...', 465, NULL, NULL, 5)
+#2 /opt/lampp/htdocs/cite-educative/system/Email/Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 /opt/lampp/htdocs/cite-educative/system/Email/Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /opt/lampp/htdocs/cite-educative/system/Email/Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 /opt/lampp/htdocs/cite-educative/app/Controllers/SendEmailController.php(33): CodeIgniter\Email\Email->send()
+#6 /opt/lampp/htdocs/cite-educative/app/Controllers/SendEmailController.php(57): App\Controllers\SendEmailController->sendEmail('guillaume.haiso...')
+#7 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(934): App\Controllers\SendEmailController->sendEmailVerify()
+#8 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SendEmailController))
+#9 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /opt/lampp/htdocs/cite-educative/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-07-06 14:28:20 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-07-06 14:28:20 --> 
+ERROR - 2023-07-06 14:29:51 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'cityeduc'@'localhost' (using password: YES) in /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php:174
+Stack trace:
+#0 /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php(174): mysqli->real_connect('localhost', 'cityeduc', 'root', '', 3306, '', 0)
+#1 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /opt/lampp/htdocs/cite-educative/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /opt/lampp/htdocs/cite-educative/system/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/cite-educative/system/BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 /opt/lampp/htdocs/cite-educative/app/Controllers/SendEmailController.php(54): CodeIgniter\BaseModel->first()
+#7 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(934): App\Controllers\SendEmailController->sendEmailVerify()
+#8 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SendEmailController))
+#9 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /opt/lampp/htdocs/cite-educative/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /opt/lampp/htdocs/cite-educative/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /opt/lampp/htdocs/cite-educative/system/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#4 /opt/lampp/htdocs/cite-educative/system/BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 /opt/lampp/htdocs/cite-educative/app/Controllers/SendEmailController.php(54): CodeIgniter\BaseModel->first()
+#6 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(934): App\Controllers\SendEmailController->sendEmailVerify()
+#7 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SendEmailController))
+#8 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/cite-educative/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-07-06 14:29:51 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `c_utilisateur`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/SendEmailController.php(54): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\SendEmailController->sendEmailVerify()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SendEmailController))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-06 14:33:05 --> Too few arguments to function App\Controllers\Inscription::showPassword(), 0 passed in /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH/Controllers/Inscription.php on line 64.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->showPassword()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-06 14:38:43 --> Undefined variable $message
+in APPPATH/Controllers/SendEmailController.php on line 51.
+ 1 APPPATH/Controllers/SendEmailController.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $message', 'APPPATH/Controllers/SendEmailController.php', 51)
+ 2 APPPATH/Controllers/SendEmailController.php(61): App\Controllers\SendEmailController->sendEmail('guillaume.haisoa@gmail.com')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\SendEmailController->sendEmailVerify()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SendEmailController))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-06 15:20:55 --> Undefined variable $userModel
+in APPPATH/Controllers/SendEmailController.php on line 36.
+ 1 APPPATH/Controllers/SendEmailController.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userModel', 'APPPATH/Controllers/SendEmailController.php', 36)
+ 2 APPPATH/Controllers/SendEmailController.php(66): App\Controllers\SendEmailController->sendEmail('guillaume.haisoa@gmail.com')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\SendEmailController->sendEmailVerify()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SendEmailController))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-06 15:21:09 --> Undefined variable $token
+in APPPATH/Controllers/SendEmailController.php on line 37.
+ 1 APPPATH/Controllers/SendEmailController.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $token', 'APPPATH/Controllers/SendEmailController.php', 37)
+ 2 APPPATH/Controllers/SendEmailController.php(66): App\Controllers\SendEmailController->sendEmail('guillaume.haisoa@gmail.com')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\SendEmailController->sendEmailVerify()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SendEmailController))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

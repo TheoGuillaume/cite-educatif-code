@@ -1,0 +1,678 @@
+CRITICAL - 2023-07-11 09:28:52 --> Undefined variable $file
+in APPPATH/Controllers/Inscription.php on line 795.
+ 1 APPPATH/Controllers/Inscription.php(795): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $file', 'APPPATH/Controllers/Inscription.php', 795)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->inscriptionStructureUploadFileSave()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-11 09:29:02 --> Call to a member function getSize() on array
+in APPPATH/Controllers/Inscription.php on line 795.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->inscriptionStructureUploadFileSave()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-11 09:29:38 --> Call to a member function getSize() on array
+in APPPATH/Controllers/Inscription.php on line 795.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->inscriptionStructureUploadFileSave()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-11 09:29:54 --> Call to a member function getSize() on array
+in APPPATH/Controllers/Inscription.php on line 795.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->inscriptionStructureUploadFileSave()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-11 10:04:30 --> Undefined variable $images
+in APPPATH/Controllers/Inscription.php on line 812.
+ 1 APPPATH/Controllers/Inscription.php(812): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $images', 'APPPATH/Controllers/Inscription.php', 812)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->inscriptionStructureUploadFileSave()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-11 10:05:22 --> Could not move file "phpzzlWbv" to "./uploads/". Reason: date_default_timezone_set(): Timezone ID 'UTC+3' is invalid
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 149.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('phpzzlWbv', 'FCPATH/uploads', 'date_default_timezone_set(): Timezone ID \'UTC+3\' is invalid')
+ 2 APPPATH/Controllers/Inscription.php(834): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/uploads', '1689062722_42f473ffd19d49ad8853.pdf')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->inscriptionStructureUploadFileSave()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-11 08:06:53 --> Could not move file "phpn3QpYM" to "./uploads/". Reason: 
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 149.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('phpn3QpYM', 'FCPATH/uploads', 'ROOTPATH/public')
+ 2 APPPATH/Controllers/Inscription.php(834): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/uploads', '1689062813_a141a773c67dd02ad25d.pdf')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->inscriptionStructureUploadFileSave()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-11 08:10:10 --> Could not move file "phpZPwKrm" to "./uploads/". Reason: 
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 149.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('phpZPwKrm', 'FCPATH/uploads', 'ROOTPATH/public')
+ 2 APPPATH/Controllers/Inscription.php(834): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/uploads', '1689063010_87f6905c9f5bcb9194e7.pdf')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->inscriptionStructureUploadFileSave()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-11 08:12:26 --> Could not move file "phpNKyz97" to "./uploads/". Reason: 
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 149.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('phpNKyz97', 'FCPATH/uploads', 'ROOTPATH/public')
+ 2 APPPATH/Controllers/Inscription.php(837): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/uploads', '1689063146_a41892285cbc0b349ef5.pdf')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->inscriptionStructureUploadFileSave()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-11 08:12:56 --> fopen(http://localhost/cite-educative/public/uploads/index.html): Failed to open stream: HTTP wrapper does not support writeable connections
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 179.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(http://localhost/cite-educative/public/uploads/index.html): Failed to open stream: HTTP wrapper does not support writeable connections', 'SYSTEMPATH/HTTP/Files/UploadedFile.php', 179)
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(179): fopen('http://localhost/cite-educative/public/uploads/index.html', 'x+b')
+ 3 SYSTEMPATH/HTTP/Files/UploadedFile.php(130): CodeIgniter\HTTP\Files\UploadedFile->setPath('http://localhost/cite-educative/public/uploads/')
+ 4 APPPATH/Controllers/Inscription.php(837): CodeIgniter\HTTP\Files\UploadedFile->move('http://localhost/cite-educative/public/uploads/', '1689063176_b5aba11e9e077f0ede8c.pdf')
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->inscriptionStructureUploadFileSave()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-11 08:13:58 --> fopen(http://localhost/cite-educative/public/uploads/index.html): Failed to open stream: HTTP wrapper does not support writeable connections
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 179.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(http://localhost/cite-educative/public/uploads/index.html): Failed to open stream: HTTP wrapper does not support writeable connections', 'SYSTEMPATH/HTTP/Files/UploadedFile.php', 179)
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(179): fopen('http://localhost/cite-educative/public/uploads/index.html', 'x+b')
+ 3 SYSTEMPATH/HTTP/Files/UploadedFile.php(130): CodeIgniter\HTTP\Files\UploadedFile->setPath('http://localhost/cite-educative/public/uploads/')
+ 4 APPPATH/Controllers/Inscription.php(837): CodeIgniter\HTTP\Files\UploadedFile->move('http://localhost/cite-educative/public/uploads/', '1689063238_e0286dcfc1c2666a93c4.pdf')
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->inscriptionStructureUploadFileSave()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-11 08:15:39 --> fopen(http://localhost/cite-educative/public/uploads): Failed to open stream: HTTP wrapper does not support writeable connections
+in APPPATH/Controllers/Inscription.php on line 828.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(http://localhost/cite-educative/public/uploads): Failed to open stream: HTTP wrapper does not support writeable connections', 'APPPATH/Controllers/Inscription.php', 828)
+ 2 APPPATH/Controllers/Inscription.php(828): fopen('http://localhost/cite-educative/public/uploads', 'w')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->inscriptionStructureUploadFileSave()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-11 08:16:09 --> Could not move file "php2O7YMw" to "./uploads/". Reason: 
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 149.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('php2O7YMw', 'FCPATH/uploads', 'ROOTPATH/public')
+ 2 APPPATH/Controllers/Inscription.php(814): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/uploads', '1689063369_2571ddfc07bb97a3c73d.pdf')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->inscriptionStructureUploadFileSave()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-11 08:16:38 --> Could not move file "phpCwHM78" to "./upload/". Reason: 
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 149.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('phpCwHM78', 'FCPATH/upload', 'ROOTPATH/public')
+ 2 APPPATH/Controllers/Inscription.php(814): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/upload', '1689063398_230d2943a4efbe0a698e.pdf')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->inscriptionStructureUploadFileSave()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-11 08:27:01 --> Undefined variable $file
+in APPPATH/Views/profil/profil_structure.php on line 254.
+ 1 APPPATH/Views/profil/profil_structure.php(254): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $file', 'APPPATH/Views/profil/profil_structure.php', 254)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profil/profil_structure.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('profil/profil_structure', [], true)
+ 5 APPPATH/Controllers/Profil.php(107): view('profil/profil_structure', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Profil->profil()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-11 08:27:12 --> Undefined variable $file
+in APPPATH/Views/profil/profil_structure.php on line 254.
+ 1 APPPATH/Views/profil/profil_structure.php(254): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $file', 'APPPATH/Views/profil/profil_structure.php', 254)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profil/profil_structure.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('profil/profil_structure', [], true)
+ 5 APPPATH/Controllers/Profil.php(107): view('profil/profil_structure', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Profil->profil()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-11 08:27:55 --> mysqli_sql_exception: Table 'cityeduc.actualite' doesn't exist in /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /opt/lampp/htdocs/cite-educative/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /opt/lampp/htdocs/cite-educative/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/cite-educative/system/BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 /opt/lampp/htdocs/cite-educative/app/Models/ActualiteModel.php(25): CodeIgniter\BaseModel->findAll()
+#7 /opt/lampp/htdocs/cite-educative/app/Controllers/Notification.php(54): App\Models\ActualiteModel->findByActif()
+#8 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(934): App\Controllers\Notification->notification()
+#9 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notification))
+#10 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /opt/lampp/htdocs/cite-educative/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-07-11 08:27:55 --> Table 'cityeduc.actualite' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `actualite`
+WHERE `status` = :status:', [...], false)
+ 2 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH/Models/ActualiteModel.php(25): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Notification.php(54): App\Models\ActualiteModel->findByActif()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Notification->notification()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notification))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-11 08:29:20 --> Undefined variable $file
+in APPPATH/Views/profil/profil_structure.php on line 254.
+ 1 APPPATH/Views/profil/profil_structure.php(254): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $file', 'APPPATH/Views/profil/profil_structure.php', 254)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profil/profil_structure.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('profil/profil_structure', [], true)
+ 5 APPPATH/Controllers/Profil.php(107): view('profil/profil_structure', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Profil->profil()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-11 08:29:40 --> Undefined variable $file
+in APPPATH/Views/profil/profil_structure.php on line 254.
+ 1 APPPATH/Views/profil/profil_structure.php(254): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $file', 'APPPATH/Views/profil/profil_structure.php', 254)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profil/profil_structure.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('profil/profil_structure', [], true)
+ 5 APPPATH/Controllers/Profil.php(107): view('profil/profil_structure', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Profil->profil()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-11 08:31:37 --> Undefined variable $file
+in APPPATH/Views/profil/profil_structure.php on line 254.
+ 1 APPPATH/Views/profil/profil_structure.php(254): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $file', 'APPPATH/Views/profil/profil_structure.php', 254)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profil/profil_structure.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('profil/profil_structure', [], true)
+ 5 APPPATH/Controllers/Profil.php(107): view('profil/profil_structure', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Profil->profil()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-11 09:14:35 --> Undefined variable $notif
+in APPPATH/Views/static/landingPage/header.php on line 78.
+ 1 APPPATH/Views/static/landingPage/header.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $notif', 'APPPATH/Views/static/landingPage/header.php', 78)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/static/landingPage/header.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('static/landingPage/header', [], true)
+ 5 APPPATH/Controllers/Profil.php(120): view('static/landingPage/header')
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Profil->profil()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-11 09:19:58 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo failed: Nom ou service inconnu in /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php:174
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', '/opt/lampp/htdo...', 174)
+#1 /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php(174): mysqli->real_connect('agoracgagoracit...', 'agoracgagoracit...', 'Agora2023', 'agoracgagoracit...', 3306, '', 0)
+#2 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#4 /opt/lampp/htdocs/cite-educative/app/Controllers/Notification.php(34): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#5 /opt/lampp/htdocs/cite-educative/app/Controllers/Notification.php(52): App\Controllers\Notification->fecthNbNotification(2, 3)
+#6 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(934): App\Controllers\Notification->notification()
+#7 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notification))
+#8 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/cite-educative/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo failed: Nom ou service inconnu in /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php:174
+Stack trace:
+#0 /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php(174): mysqli->real_connect('agoracgagoracit...', 'agoracgagoracit...', 'Agora2023', 'agoracgagoracit...', 3306, '', 0)
+#1 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /opt/lampp/htdocs/cite-educative/app/Controllers/Notification.php(34): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#4 /opt/lampp/htdocs/cite-educative/app/Controllers/Notification.php(52): App\Controllers\Notification->fecthNbNotification(2, 3)
+#5 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(934): App\Controllers\Notification->notification()
+#6 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notification))
+#7 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/cite-educative/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo failed: Nom ou service inconnu in /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /opt/lampp/htdocs/cite-educative/app/Controllers/Notification.php(34): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#3 /opt/lampp/htdocs/cite-educative/app/Controllers/Notification.php(52): App\Controllers\Notification->fecthNbNotification(2, 3)
+#4 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(934): App\Controllers\Notification->notification()
+#5 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notification))
+#6 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/cite-educative/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-07-11 09:19:58 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Nom ou service inconnu
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Controllers/Notification.php(34): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) as isa FROM v_demande_confimer_struct where v_demande_confimer_struct.id_recepteur =  \'2\' and v_demande_confimer_struct.lu = 0')
+ 3 APPPATH/Controllers/Notification.php(52): App\Controllers\Notification->fecthNbNotification(2, 3)
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Notification->notification()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notification))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-11 09:20:28 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo failed: Nom ou service inconnu in /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php:174
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', '/opt/lampp/htdo...', 174)
+#1 /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php(174): mysqli->real_connect('agoracgagoracit...', 'agoracgagoracit...', 'Agora2023', 'agoracgagoracit...', 3306, '', 0)
+#2 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#4 /opt/lampp/htdocs/cite-educative/app/Controllers/Notification.php(34): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#5 /opt/lampp/htdocs/cite-educative/app/Controllers/Notification.php(52): App\Controllers\Notification->fecthNbNotification(2, 3)
+#6 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(934): App\Controllers\Notification->notification()
+#7 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notification))
+#8 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/cite-educative/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo failed: Nom ou service inconnu in /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php:174
+Stack trace:
+#0 /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php(174): mysqli->real_connect('agoracgagoracit...', 'agoracgagoracit...', 'Agora2023', 'agoracgagoracit...', 3306, '', 0)
+#1 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /opt/lampp/htdocs/cite-educative/app/Controllers/Notification.php(34): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#4 /opt/lampp/htdocs/cite-educative/app/Controllers/Notification.php(52): App\Controllers\Notification->fecthNbNotification(2, 3)
+#5 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(934): App\Controllers\Notification->notification()
+#6 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notification))
+#7 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/cite-educative/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo failed: Nom ou service inconnu in /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /opt/lampp/htdocs/cite-educative/app/Controllers/Notification.php(34): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#3 /opt/lampp/htdocs/cite-educative/app/Controllers/Notification.php(52): App\Controllers\Notification->fecthNbNotification(2, 3)
+#4 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(934): App\Controllers\Notification->notification()
+#5 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notification))
+#6 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/cite-educative/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-07-11 09:20:28 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Nom ou service inconnu
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Controllers/Notification.php(34): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) as isa FROM v_demande_confimer_struct where v_demande_confimer_struct.id_recepteur =  \'2\' and v_demande_confimer_struct.lu = 0')
+ 3 APPPATH/Controllers/Notification.php(52): App\Controllers\Notification->fecthNbNotification(2, 3)
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Notification->notification()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notification))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-11 09:20:30 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo failed: Nom ou service inconnu in /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php:174
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', '/opt/lampp/htdo...', 174)
+#1 /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php(174): mysqli->real_connect('agoracgagoracit...', 'agoracgagoracit...', 'Agora2023', 'agoracgagoracit...', 3306, '', 0)
+#2 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#4 /opt/lampp/htdocs/cite-educative/app/Controllers/LandingPage.php(39): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#5 /opt/lampp/htdocs/cite-educative/app/Controllers/LandingPage.php(95): App\Controllers\LandingPage->fecthNbNotification(2, 3)
+#6 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageTous()
+#7 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+#8 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/cite-educative/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo failed: Nom ou service inconnu in /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php:174
+Stack trace:
+#0 /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php(174): mysqli->real_connect('agoracgagoracit...', 'agoracgagoracit...', 'Agora2023', 'agoracgagoracit...', 3306, '', 0)
+#1 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /opt/lampp/htdocs/cite-educative/app/Controllers/LandingPage.php(39): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#4 /opt/lampp/htdocs/cite-educative/app/Controllers/LandingPage.php(95): App\Controllers\LandingPage->fecthNbNotification(2, 3)
+#5 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageTous()
+#6 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+#7 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/cite-educative/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo failed: Nom ou service inconnu in /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /opt/lampp/htdocs/cite-educative/app/Controllers/LandingPage.php(39): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#3 /opt/lampp/htdocs/cite-educative/app/Controllers/LandingPage.php(95): App\Controllers\LandingPage->fecthNbNotification(2, 3)
+#4 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageTous()
+#5 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+#6 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/cite-educative/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-07-11 09:20:30 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Nom ou service inconnu
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Controllers/LandingPage.php(39): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) as isa FROM v_demande_confimer_struct where v_demande_confimer_struct.id_recepteur =  \'2\' and v_demande_confimer_struct.lu = 0')
+ 3 APPPATH/Controllers/LandingPage.php(95): App\Controllers\LandingPage->fecthNbNotification(2, 3)
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LandingPage->landingPageTous()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingPage))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-11 09:20:47 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo failed: Nom ou service inconnu in /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php:174
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', '/opt/lampp/htdo...', 174)
+#1 /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php(174): mysqli->real_connect('agoracgagoracit...', 'agoracgagoracit...', 'Agora2023', 'agoracgagoracit...', 3306, '', 0)
+#2 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#4 /opt/lampp/htdocs/cite-educative/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 /opt/lampp/htdocs/cite-educative/system/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#6 /opt/lampp/htdocs/cite-educative/system/BaseModel.php(656): CodeIgniter\Model->doFirst()
+#7 /opt/lampp/htdocs/cite-educative/app/Controllers/Home.php(39): CodeIgniter\BaseModel->first()
+#8 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(934): App\Controllers\Home->login()
+#9 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /opt/lampp/htdocs/cite-educative/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo failed: Nom ou service inconnu in /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php:174
+Stack trace:
+#0 /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php(174): mysqli->real_connect('agoracgagoracit...', 'agoracgagoracit...', 'Agora2023', 'agoracgagoracit...', 3306, '', 0)
+#1 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /opt/lampp/htdocs/cite-educative/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /opt/lampp/htdocs/cite-educative/system/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/cite-educative/system/BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 /opt/lampp/htdocs/cite-educative/app/Controllers/Home.php(39): CodeIgniter\BaseModel->first()
+#7 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(934): App\Controllers\Home->login()
+#8 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /opt/lampp/htdocs/cite-educative/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo failed: Nom ou service inconnu in /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /opt/lampp/htdocs/cite-educative/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /opt/lampp/htdocs/cite-educative/system/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#4 /opt/lampp/htdocs/cite-educative/system/BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 /opt/lampp/htdocs/cite-educative/app/Controllers/Home.php(39): CodeIgniter\BaseModel->first()
+#6 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(934): App\Controllers\Home->login()
+#7 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/cite-educative/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-07-11 09:20:47 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Nom ou service inconnu
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `c_utilisateur`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/Home.php(39): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->login()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-11 09:25:21 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Home.php on line 46.
+ 1 APPPATH/Controllers/Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Home.php', 46)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->login()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-11 09:33:02 --> Undefined variable $file
+in APPPATH/Views/profil/profil_structure.php on line 254.
+ 1 APPPATH/Views/profil/profil_structure.php(254): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $file', 'APPPATH/Views/profil/profil_structure.php', 254)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profil/profil_structure.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('profil/profil_structure', [], true)
+ 5 APPPATH/Controllers/Profil.php(107): view('profil/profil_structure', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Profil->profil()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-11 09:35:32 --> Undefined variable $file
+in APPPATH/Views/profil/profil_structure.php on line 254.
+ 1 APPPATH/Views/profil/profil_structure.php(254): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $file', 'APPPATH/Views/profil/profil_structure.php', 254)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profil/profil_structure.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('profil/profil_structure', [], true)
+ 5 APPPATH/Controllers/Profil.php(107): view('profil/profil_structure', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Profil->profil()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-11 09:35:39 --> Undefined variable $file
+in APPPATH/Views/profil/profil_structure.php on line 254.
+ 1 APPPATH/Views/profil/profil_structure.php(254): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $file', 'APPPATH/Views/profil/profil_structure.php', 254)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profil/profil_structure.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('profil/profil_structure', [], true)
+ 5 APPPATH/Controllers/Profil.php(107): view('profil/profil_structure', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Profil->profil()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-11 09:35:46 --> Undefined variable $file
+in APPPATH/Views/profil/profil_structure.php on line 254.
+ 1 APPPATH/Views/profil/profil_structure.php(254): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $file', 'APPPATH/Views/profil/profil_structure.php', 254)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profil/profil_structure.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('profil/profil_structure', [], true)
+ 5 APPPATH/Controllers/Profil.php(107): view('profil/profil_structure', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Profil->profil()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-11 10:36:05 --> Undefined variable $file
+in APPPATH/Views/profil/profil_structure.php on line 254.
+ 1 APPPATH/Views/profil/profil_structure.php(254): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $file', 'APPPATH/Views/profil/profil_structure.php', 254)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profil/profil_structure.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('profil/profil_structure', [], true)
+ 5 APPPATH/Controllers/Profil.php(107): view('profil/profil_structure', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Profil->profil()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-11 11:32:18 --> mysqli_sql_exception: Table 'cityeduc.passage_utilisateur' doesn't exist in /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `pa...', 0)
+#1 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pa...')
+#2 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pa...')
+#3 /opt/lampp/htdocs/cite-educative/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pa...', Array, false)
+#4 /opt/lampp/htdocs/cite-educative/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 /opt/lampp/htdocs/cite-educative/system/BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 /opt/lampp/htdocs/cite-educative/system/Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 /opt/lampp/htdocs/cite-educative/app/Controllers/Home.php(78): CodeIgniter\Model->insert(Array)
+#8 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(934): App\Controllers\Home->login()
+#9 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /opt/lampp/htdocs/cite-educative/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-07-11 11:32:18 --> Table 'cityeduc.passage_utilisateur' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `passage_utilisateur` (`id_user`, `createAt`) VALUES (:id_user:, :createAt:)', [...], false)
+ 2 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH/Controllers/Home.php(78): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->login()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-11 11:36:00 --> Undefined variable $notif
+in APPPATH/Views/static/landingPage/header.php on line 78.
+ 1 APPPATH/Views/static/landingPage/header.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $notif', 'APPPATH/Views/static/landingPage/header.php', 78)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/static/landingPage/header.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('static/landingPage/header', [], true)
+ 5 APPPATH/Controllers/Profil.php(120): view('static/landingPage/header')
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Profil->profil()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-11 11:36:24 --> Undefined variable $notif
+in APPPATH/Views/static/landingPage/header.php on line 78.
+ 1 APPPATH/Views/static/landingPage/header.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $notif', 'APPPATH/Views/static/landingPage/header.php', 78)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/static/landingPage/header.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('static/landingPage/header', [], true)
+ 5 APPPATH/Controllers/Profil.php(120): view('static/landingPage/header')
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Profil->profil()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-11 11:46:28 --> Undefined variable $email
+in APPPATH/Controllers/Inscription.php on line 1023.
+ 1 APPPATH/Controllers/Inscription.php(1023): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $email', 'APPPATH/Controllers/Inscription.php', 1023)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->saveActeur()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-11 11:49:56 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-07-11 11:49:56 --> 220 ESMTP smtp.hostinger.com
+
+hello: 250-smtp.hostinger.com
+250-PIPELINING
+250-SIZE 48811212
+250-ETRN
+250-AUTH PLAIN LOGIN
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 CHUNKING
+
+from: 501 5.1.7 Bad sender address syntax
+
+The following SMTP error was encountered: 501 5.1.7 Bad sender address syntax
+
+quit: 221 2.0.0 Bye
+
+ERROR - 2023-07-11 11:50:06 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-07-11 11:50:06 --> 220 ESMTP smtp.hostinger.com
+
+hello: 250-smtp.hostinger.com
+250-PIPELINING
+250-SIZE 48811212
+250-ETRN
+250-AUTH PLAIN LOGIN
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 CHUNKING
+
+from: 501 5.1.7 Bad sender address syntax
+
+The following SMTP error was encountered: 501 5.1.7 Bad sender address syntax
+
+quit: 221 2.0.0 Bye
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+220 ESMTP smtp.hostinger.com
+
+hello: 250-smtp.hostinger.com
+250-PIPELINING
+250-SIZE 48811212
+250-ETRN
+250-AUTH PLAIN LOGIN
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 CHUNKING
+
+from: 501 5.1.7 Bad sender address syntax
+
+The following SMTP error was encountered: 501 5.1.7 Bad sender address syntax
+
+quit: 221 2.0.0 Bye
+
+ERROR - 2023-07-11 11:50:16 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-07-11 11:50:16 --> 220 ESMTP smtp.hostinger.com
+
+hello: 250-smtp.hostinger.com
+250-PIPELINING
+250-SIZE 48811212
+250-ETRN
+250-AUTH PLAIN LOGIN
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 CHUNKING
+
+from: 501 5.1.7 Bad sender address syntax
+
+The following SMTP error was encountered: 501 5.1.7 Bad sender address syntax
+
+quit: 221 2.0.0 Bye
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+220 ESMTP smtp.hostinger.com
+
+hello: 250-smtp.hostinger.com
+250-PIPELINING
+250-SIZE 48811212
+250-ETRN
+250-AUTH PLAIN LOGIN
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 CHUNKING
+
+from: 501 5.1.7 Bad sender address syntax
+
+The following SMTP error was encountered: 501 5.1.7 Bad sender address syntax
+
+quit: 221 2.0.0 Bye
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+220 ESMTP smtp.hostinger.com
+
+hello: 250-smtp.hostinger.com
+250-PIPELINING
+250-SIZE 48811212
+250-ETRN
+250-AUTH PLAIN LOGIN
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 CHUNKING
+
+from: 501 5.1.7 Bad sender address syntax
+
+The following SMTP error was encountered: 501 5.1.7 Bad sender address syntax
+
+quit: 221 2.0.0 Bye
+
+ERROR - 2023-07-11 15:14:45 --> mysqli_sql_exception: Unknown column 'reset_token' in 'field list' in /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/cite-educative/system/Database/MySQLi/Connection.php(295): mysqli->query('UPDATE `c_utili...', 0)
+#1 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `c_utili...')
+#2 /opt/lampp/htdocs/cite-educative/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `c_utili...')
+#3 /opt/lampp/htdocs/cite-educative/system/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `c_utili...', Array, false)
+#4 /opt/lampp/htdocs/cite-educative/system/Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 /opt/lampp/htdocs/cite-educative/system/BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 /opt/lampp/htdocs/cite-educative/system/Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#7 /opt/lampp/htdocs/cite-educative/system/BaseModel.php(690): CodeIgniter\Model->update('1', Array)
+#8 /opt/lampp/htdocs/cite-educative/app/Controllers/SendEmailController.php(45): CodeIgniter\BaseModel->save(Array)
+#9 /opt/lampp/htdocs/cite-educative/app/Controllers/SendEmailController.php(65): App\Controllers\SendEmailController->sendEmail('guillaumetheo92...')
+#10 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(934): App\Controllers\SendEmailController->sendEmailVerify()
+#11 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SendEmailController))
+#12 /opt/lampp/htdocs/cite-educative/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /opt/lampp/htdocs/cite-educative/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-07-11 15:14:45 --> Unknown column 'reset_token' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `c_utilisateur` SET `id_utilisateur_categorie` = :id_utilisateur_categorie:, `nom` = :nom:, `mdp_1` = :mdp_1:, `date_ins` = :date_ins:, `etat` = :etat:, `nombre_de_passages` = :nombre_de_passages:, `reset_token` = :reset_token:, `token_expire` = :token_expire:
+WHERE `c_utilisateur`.`id` IN :c_utilisateur.id:', [...], false)
+ 2 SYSTEMPATH/Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH/BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH/Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 5 SYSTEMPATH/BaseModel.php(690): CodeIgniter\Model->update('1', [...])
+ 6 APPPATH/Controllers/SendEmailController.php(45): CodeIgniter\BaseModel->save([...])
+ 7 APPPATH/Controllers/SendEmailController.php(65): App\Controllers\SendEmailController->sendEmail('guillaumetheo92@gmail.com')
+ 8 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\SendEmailController->sendEmailVerify()
+ 9 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SendEmailController))
+10 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-11 13:10:04 --> Undefined variable $file
+in APPPATH/Views/profil/profil_structure.php on line 254.
+ 1 APPPATH/Views/profil/profil_structure.php(254): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $file', 'APPPATH/Views/profil/profil_structure.php', 254)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profil/profil_structure.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('profil/profil_structure', [], true)
+ 5 APPPATH/Controllers/Profil.php(107): view('profil/profil_structure', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Profil->profil()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

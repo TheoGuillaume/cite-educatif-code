@@ -1,0 +1,14 @@
+CRITICAL - 2023-08-04 13:27:43 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Inscription.php on line 798.
+ 1 APPPATH/Controllers/Inscription.php(798): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Inscription.php', 798)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->inscriptionStructureModalitePublicSave()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-04 13:29:31 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Inscription.php on line 798.
+ 1 APPPATH/Controllers/Inscription.php(798): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Inscription.php', 798)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->inscriptionStructureModalitePublicSave()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

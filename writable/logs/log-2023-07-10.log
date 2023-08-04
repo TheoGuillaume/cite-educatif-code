@@ -1,0 +1,8 @@
+CRITICAL - 2023-07-10 08:24:25 --> Could not move file "phpoCg5JY" to "./uploads/". Reason: date_default_timezone_set(): Timezone ID 'UTC+3' is invalid
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 149.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('phpoCg5JY', 'FCPATH/uploads', 'date_default_timezone_set(): Timezone ID \'UTC+3\' is invalid')
+ 2 APPPATH/Controllers/Inscription.php(814): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/uploads', '1688970265_243bed92ef1b98b93813.pdf')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Inscription->inscriptionStructureUploadFileSave()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inscription))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

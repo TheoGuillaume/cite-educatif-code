@@ -1,0 +1,1 @@
+ALTER TABLE cs_struct ALTER etat SET DEFAULT 0 ;

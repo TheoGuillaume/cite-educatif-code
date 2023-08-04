@@ -1,0 +1,42 @@
+CRITICAL - 2023-07-13 11:41:53 --> Undefined variable $user
+in APPPATH/Controllers/Structure.php on line 442.
+ 1 APPPATH/Controllers/Structure.php(442): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'APPPATH/Controllers/Structure.php', 442)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Structure->structureModifierDocument()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Structure))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-13 13:00:32 --> count(): Argument #1 ($value) must be of type Countable|array, CodeIgniter\HTTP\Files\UploadedFile given
+in APPPATH/Controllers/ModificationStructure.php on line 81.
+ 1 APPPATH/Controllers/ModificationStructure.php(81): count(Object(CodeIgniter\HTTP\Files\UploadedFile))
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ModificationStructure->updateDocument()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ModificationStructure))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-13 13:00:49 --> count(): Argument #1 ($value) must be of type Countable|array, CodeIgniter\HTTP\Files\UploadedFile given
+in APPPATH/Controllers/ModificationStructure.php on line 81.
+ 1 APPPATH/Controllers/ModificationStructure.php(81): count(Object(CodeIgniter\HTTP\Files\UploadedFile))
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ModificationStructure->updateDocument()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ModificationStructure))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-13 13:21:28 --> array_sum(): Argument #1 ($array) must be of type array, int given
+in APPPATH/Controllers/ModificationStructure.php on line 88.
+ 1 APPPATH/Controllers/ModificationStructure.php(88): array_sum(344868)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ModificationStructure->updateDocument()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ModificationStructure))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-13 13:21:53 --> array_sum(): Argument #1 ($array) must be of type array, int given
+in APPPATH/Controllers/ModificationStructure.php on line 88.
+ 1 APPPATH/Controllers/ModificationStructure.php(88): array_sum(344868)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ModificationStructure->updateDocument()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ModificationStructure))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-13 13:26:23 --> Undefined array key "fichier"
+in APPPATH/Controllers/ModificationStructure.php on line 85.
+ 1 APPPATH/Controllers/ModificationStructure.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "fichier"', 'APPPATH/Controllers/ModificationStructure.php', 85)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ModificationStructure->updateDocument()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ModificationStructure))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,5 @@
+Préfixes:
+c_: configuration en général
+ca_ : conf_acteur //configuré par l'acteur
+cs_ : conf_struct 
+csa_: conf_superadmin //configuré par le conf_superadmin
